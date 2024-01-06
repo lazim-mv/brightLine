@@ -1,0 +1,88 @@
+const container2Data = [
+  {
+    img: "/Container2/1.svg",
+    title: "KG to 10TH STD",
+    description:
+      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+  },
+  {
+    img: "/Container2/2.svg",
+    title: "Expert Instructor",
+    description:
+      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+  },
+  {
+    img: "/Container2/3.svg",
+    title: "Extra-curricular activities",
+    description:
+      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+  },
+  {
+    img: "/Container2/4.svg",
+    title: "KG to 10TH STD",
+    description:
+      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+  },
+  {
+    img: "/Container2/5.svg",
+    title: "KG to 10TH STD",
+    description:
+      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+  },
+  {
+    img: "/Container2/6.svg",
+    title: "KG to 10TH STD",
+    description:
+      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+  },
+];
+
+const container3Data = {
+  img: "/Container3/about.png",
+  sectionName: "About Us",
+  sectionTitle: "Experience the Best with Signature",
+  buttonText: "Know more",
+  description:
+    "Risus scelerisque a non turpis vitae malesuada sed venenatis. In fringilla sollicitudin euismod sed. At urna adipiscing commodo suspendisse nunc enim tristique et. Orci elementum auctor accumsan semper lacus accumsan. commodo suspendisse nunc enim tristique et.",
+};
+
+const container4Data = {
+  sectionName: "Benefits of Bright Line School",
+  sectionTitle: "New strategies that lead",
+  buttonText: "Know more",
+  description:
+    "Risus scelerisque a non turpis vitae malesuada sed venenatis. In fringilla commodo suspendisse nunc enim tristique.",
+  imageCard: [
+    {
+      img: "/Container4/1(4).png",
+      cardTitle: "AI Technology Training",
+      cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
+    },
+    {
+      img: "/Container4/1(1).png",
+      cardTitle: "AI Technology Training",
+      cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
+    },
+    {
+      img: "/Container4/1(2).png",
+      cardTitle: "AI Technology Training",
+      cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
+    },
+    {
+      img: "/Container4/1(3).png",
+      cardTitle: "AI Technology Training",
+      cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
+    },
+    {
+      img: "/Container4/1(5).png",
+      cardTitle: "AI Technology Training",
+      cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
+    },
+    {
+      img: "/Container4/1(6).png",
+      cardTitle: "AI Technology Training",
+      cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
+    },
+  ],
+};
+export { container2Data, container3Data, container4Data };
