@@ -15,10 +15,6 @@ const Facilities = () => {
     "/container5/1(2).png",
     "/container5/1(3).png",
     "/container5/1(4).png",
-    "/container5/1(1).png",
-    "/container5/1(2).png",
-    "/container5/1(3).png",
-    "/container5/1(4).png",
   ];
 
   const totalImages = images.length;
@@ -40,8 +36,6 @@ const Facilities = () => {
       setCurrentIndex(clicks - 1);
     }
   };
-  let a = "377";
-  console.log(currentIndex * a, "lloo");
 
   return (
     <div className="container5">
@@ -86,9 +80,8 @@ const Facilities = () => {
             style={{ transform: `translateX(-${currentIndex * 32.65625}vw)` }}
           >
             {images.map((image, index) => (
-              <div className="relative">
+              <div className="relative" key={index}>
                 <Image
-                  key={index}
                   width={377}
                   height={420}
                   src={image}
