@@ -7,12 +7,13 @@ import Benefits from "./components/Benefits";
 import About from "./components/About";
 import Strategies from "./components/Strategies";
 import Facilities from "./components/Facilities";
+import { container5Data } from "./Contents";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
       </Head>
       <Header />
       <main className="mainContainer">
@@ -20,7 +21,7 @@ export default function Home() {
         <Benefits />
         <About />
         <Strategies />
-        <Facilities />
+        <Facilities images={container5Data.images}/>
       </main>
     </>
   );

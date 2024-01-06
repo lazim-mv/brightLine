@@ -10,6 +10,7 @@ const BtnComponent = ({
   margin,
   arrow,
   h5Margin,
+  arrowColor,
 }) => {
   return (
     <div
@@ -24,7 +25,12 @@ const BtnComponent = ({
     >
       <div className="visibleWrapperContainer">
         <div className="topVisibleContainer buttonText">
-          <h5 className="buttonText" style={{ margin: h5Margin }}>
+          <h5
+            className="buttonText"
+            style={{
+              margin: h5Margin ? h5Margin : "0 0.6510416666666667vw 0 0",
+            }}
+          >
             {buttonText}
           </h5>
           {arrow ? (
@@ -37,13 +43,21 @@ const BtnComponent = ({
               quality={100}
               priority={true}
               unoptimized
+              style={{
+                filter: arrowColor ? "brightness(1000%)" : "",
+              }}
             />
           ) : (
             ""
           )}
         </div>
         <div className="bottomVisibleContainer buttonText">
-          <h5 className="buttonText" style={{ margin: h5Margin }}>
+          <h5
+            className="buttonText"
+            style={{
+              margin: h5Margin ? h5Margin : "0 0.6510416666666667vw 0 0",
+            }}
+          >
             {buttonText}
           </h5>
           {arrow ? (
@@ -56,6 +70,9 @@ const BtnComponent = ({
               quality={100}
               priority={true}
               unoptimized
+              style={{
+                filter: arrowColor ? "brightness(1000%)" : "",
+              }}
             />
           ) : (
             ""

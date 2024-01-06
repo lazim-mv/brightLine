@@ -252,8 +252,8 @@ a {
 }
 
 .heroContianer img{
-  width: 100vw !important;
-  height: 45.57291666666667vw !important;
+  width: 100vw ;
+  height: 45.57291666666667vw ;
 }
 
 .heroTitle{
@@ -420,27 +420,27 @@ a {
 
 /* Carousel.module.css */
 
-.carouselContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 4.557291666666666vw;
-}
 
 .topContainer5{
+  position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 99;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
   height: 29.34375vw;
+  margin-top: 4.557291666666666vw;
+  display: flex;
+  z-index: 0;
+  gap: 1.3020833333333335vw;
+
 }
 
 .imageContainer {
-  display: flex;
   transition: transform 0.5s ease;
-  gap: 3.90625vw;
   margin-left: 1.953125vw;
 }
 
@@ -518,12 +518,24 @@ a {
   
 }
 
-.buttons {
+.bannerImage{
+  height: 42.31770833333333vw;
+  position: relative;
+}
+
+.bannerImage img{
+  height: 42.31770833333333vw;
+}
+
+.bannerImage .absolute{
   position: absolute;
   top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute{
+  position: absolute;
 }
 
 /* .buttons button:nth-child(2):active + .imageContainer {
