@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    BtnComponent,
   SectionDescription,
   SectionName,
   SectionTitle,
@@ -18,6 +19,7 @@ const Strategies = () => {
           weight="700"
           padding="0 0 1.3020833333333335vw 0"
           textAllign="center"
+          dashText={true}
         />
         <SectionTitle
           sectionText={container4Data.sectionTitle}
@@ -40,6 +42,15 @@ const Strategies = () => {
           </div>
         ))}
       </div>
+      <BtnComponent 
+          borderColor="#5A1E90"
+          color="#5A1E90"
+          width="12.630208333333334vw"
+          buttonText={container4Data.buttonText}
+          margin="4.557291666666666vw 0 0 0"
+          arrow="true"
+          h5Margin="0 0.6510416666666667vw 0 0"
+        />
     </div>
   );
 };

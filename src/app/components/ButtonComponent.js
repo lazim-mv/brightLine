@@ -78,7 +78,7 @@ const SectionName = ({
   return (
     <h4
       style={{
-        color: color,
+        color: color ? color : "#5A1E90",
         fontWeight: weight,
         padding: padding ? padding : "0 0 1.3020833333333335vw 0",
         textAlign: textAllign,

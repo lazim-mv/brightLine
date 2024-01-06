@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import About from "./components/About";
 import Strategies from "./components/Strategies";
+import Facilities from "./components/Facilities";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Benefits />
         <About />
         <Strategies />
+        <Facilities />
       </main>
     </>
   );
