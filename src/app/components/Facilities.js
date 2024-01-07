@@ -63,7 +63,7 @@ const Facilities = () => {
               <Image
                 width={377}
                 height={420}
-                src="/Home/rightGreaterThanArrowPurple.svg"
+                src="/Home/RightGreaterThanArrowPurple.svg"
                 alt="arrow"
               />
             </div>
