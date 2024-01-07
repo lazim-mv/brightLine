@@ -91,7 +91,7 @@ const container5Data = {
   sectionTitle: "New strategies that lead",
   imageCard: [
     {
-      img: "/container5/1(1).png",
+      img: "/Container5/1(1).png",
       cardTitle: "AI Technology Training",
       cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
     },
@@ -111,7 +111,7 @@ const container5Data = {
       cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
     },
     {
-      img: "/container5/1(1).png",
+      img: "/Container5/1(1).png",
       cardTitle: "AI Technology Training",
       cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
     },
@@ -131,25 +131,5 @@ const container5Data = {
       cardDesc: "Risus scelerisque a non turpis vitae nunc enim tristique.",
     },
   ],
-  images: [
-    "/container5/1(1).png",
-    "/container5/1(2).png",
-    "/container5/1(3).png",
-    "/container5/1(4).png",
-    "/container5/1(1).png",
-    "/container5/1(2).png",
-    "/container5/1(3).png",
-    "/container5/1(4).png",
-    "/container5/1(1).png",
-    "/container5/1(2).png",
-    "/container5/1(3).png",
-    "/container5/1(4).png",
-  ],
-  facilitiesTitle: {
-    title: "Class Room",
-    title: "Computer Lab",
-    title: "Football Ground",
-    title: "Agriculture Technology",
-  },
 };
 export { container2Data, container3Data, container4Data, container5Data };
