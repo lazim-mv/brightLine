@@ -1,45 +1,45 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BtnComponent, SectionName, SectionTitle } from "./ButtonComponent";
 import Image from "next/image";
-import bannerImage from "../../../public/Container5/5.png";
-import { container5Data } from "../Contents";
 import ImageCard from "./ImageCard";
 
-const Facilities = () => {
-  const cardData = container5Data.imageCard;
+const Facilities = ({ content, extraContent }) => {
+  console.log(extraContent, "facili");
+  const cardData = content.imageCard;
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(cardData.length, "fsdkfjsdk");
-  console.log(cardData, "fsdkfjsdk");
 
   const totalImages = cardData.length;
   const clicks = totalImages - 3;
-  console.log(clicks, "carousel");
 
   const nextImage = () => {
-    if (currentIndex < clicks - 1) {
+    if (currentIndex < clicks) {
       setCurrentIndex((prevIndex) => prevIndex + 1);
     } else {
       setCurrentIndex(0);
     }
   };
+  console.log(currentIndex);
 
   const prevImage = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prevIndex) => prevIndex - 1);
     } else {
-      setCurrentIndex(clicks - 1);
+      setCurrentIndex(clicks);
     }
   };
 
   return (
     <>
-      <div className="container5">
+      <div className="container5" id="container5">
         <div className="topContainer5">
           <div>
-            <SectionName sectionText="Facilities" />
+            <SectionName
+              sectionText={content.sectionName}
+              weight="700"
+            />
             <SectionTitle
-              sectionText="Experience the Best with Signature"
+              sectionText={content.sectionTitle}
               color="#282938"
               width="32.421875vw"
             />
@@ -69,48 +69,30 @@ const Facilities = () => {
             </div>
           </div>
         </div>
-        <div className="carousel">
-          {cardData.map((data, index) => (
-            <ImageCard
-              key={index}
-              currentIndex={currentIndex}
-              img={data.img}
-              titleText={data.cardTitle}
-              carousel={true}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="faciliteiesBannerContainer5">
-        <div className="heroContianer bannerImage">
-          <Image
-            className="hImage"
-            src={bannerImage}
-            alt="Asian Engineer"
-            quality={100}
-            priority={true}
-            unoptimized
-          />
-          <div className="absolute">
-            <SectionTitle
-              sectionText="Leadership academy virtual, apply today with intro price"
-              color="#fff"
-              textAllign="center"
-              padding="0 0 1.3020833333333335vw 0"
-              // width="44.40104166666667vw"
-            />
-            <BtnComponent
-              arrow={true}
-              bg="transparrent"
-              color="#fff"
-              buttonText="Know more"
-              width="12.630208333333334vw"
-              margin="0 auto"
-              borderColor="#fff"
-              arrowColor={true}
-            />
+        <div className="carouselWrapper" style={{height:extraContent ? "29.947916666666668vw" : "28.645833333333332vw"}}>
+          <div className="carousel">
+            {cardData.map((data, index) => (
+              <ImageCard
+                key={index}
+                currentIndex={currentIndex}
+                img={data.img}
+                titleText={data.cardTitle}
+                description={data.cardDate}
+                carousel={true}
+                extraContent={extraContent}
+              />
+            ))}
           </div>
         </div>
+        <BtnComponent
+          arrow={true}
+          bg="transparrent"
+          color="#5A1E90"
+          buttonText={content.buttonText}
+          width="12.630208333333334vw"
+          margin="4.557291666666666vw auto 0 auto"
+          borderColor="#5A1E90"
+        />
       </div>
     </>
   );

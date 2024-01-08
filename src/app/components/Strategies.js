@@ -38,6 +38,7 @@ const Strategies = () => {
               img={data.img}
               titleText={data.cardTitle}
               description={data.cardDesc}
+              extraContent={false}
             />
           </div>
         ))}

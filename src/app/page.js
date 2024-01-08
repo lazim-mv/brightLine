@@ -1,13 +1,16 @@
 import Head from "next/head";
-import Image from "next/image";
-import { ButtonComponent } from "./components/ButtonComponent";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import About from "./components/About";
 import Strategies from "./components/Strategies";
 import Facilities from "./components/Facilities";
-import { container5Data } from "./Contents";
+import StudentSpace from "./components/StudentSpace";
+import Banner from "./components/Banner";
+import { container5Data, container7Data } from "./Contents";
+import Blogs from "./components/Blogs";
+import ContactBanner from "./components/ContactBanner";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +24,13 @@ export default function Home() {
         <Benefits />
         <About />
         <Strategies />
-        <Facilities images={container5Data.images}/>
+        <Facilities content={container5Data}/>
+        <Banner />
+        <StudentSpace />
+        <Facilities content={container7Data}  extraContent={true}/>
+        <Blogs />
+        <ContactBanner />
+        <Footer />
       </main>
     </>
   );

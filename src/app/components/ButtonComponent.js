@@ -19,7 +19,7 @@ const BtnComponent = ({
         border: "0.10416666666666667vw solid " + borderColor,
         background: bg,
         color: color,
-        width: width,
+        width: width ? width : "12.630208333333334vw",
         margin: margin,
       }}
     >
