@@ -815,7 +815,7 @@ a {
   
   .heroTitle{
     line-height: 11.520000000000001vw;
-    width: 87.2vw;
+    width: 95vw;
   }
   
   h2 {
@@ -879,6 +879,7 @@ a {
 
   .heroContianer{
     height: 160vw;
+    margin-top: 21.333333333333336vw;
   }
 
   .heroContianer img{
@@ -900,11 +901,12 @@ a {
 
   .benefitBottomBox{
     margin-top: 6.666666666666667vw;
-    gap: 4vw;
+    gap: 5.333333333333334vw;
   }
 
   .cardContainer{
     width: 41.6vw;
+    width: 40.5vw;
     height: 45.86666666666667vw;
     gap: 0;
   }
@@ -991,14 +993,17 @@ a {
   .container5{
     margin-top: var(--mobileContainerMarginTop);
     padding: var(--mobileBackgroundContainerPadding);
-    padding-top: 41.6vw;
   }
 
   .container5 .carouselWrapper{
     margin-top: 0;
   }
 
-  .container5 .topContainer5{
+  .mainContainer7{
+    padding-top: 41.6vw;
+  }
+
+  .container5 .topContainer7{
     display: none;
   }
 
@@ -1176,7 +1181,16 @@ a {
 
   .footer .quickLinks{
     height: 29.86666666666667vw;
+  }
+
+  .footer .quickLinks div{
+    display: flex;
     flex-wrap: wrap;
+    height: 21.333333333333336vw;
+  }
+
+  .footer .quickLinks a{
+    width: 21.333333333333336vw;
   }
 
   .footer h3{
@@ -1236,6 +1250,32 @@ a {
     margin: 4vw auto 5.333333333333334vw auto;
     width: 100%;
     height: 1px;
+  }
+
+
+  .mHeader{
+    display: flex;
+    padding: var(--mobileContainerPadding);
+    height: 65px;
+    align-items: center;
+  }
+
+  .fixedmHeadContainer{
+    width: 100%;
+  }
+
+  .mHeader button{
+    width: 10.666666666666668vw;
+    height: 10.666666666666668vw;
+  }
+
+  .hMenu{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hMenu h4{
+    font-size: 3.733333333333334vw;
   }
 
 }

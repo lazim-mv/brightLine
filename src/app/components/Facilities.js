@@ -4,7 +4,13 @@ import { BtnComponent, SectionName, SectionTitle } from "./ButtonComponent";
 import Image from "next/image";
 import ImageCard from "./ImageCard";
 
-const Facilities = ({ content, extraContent, className }) => {
+const Facilities = ({
+  content,
+  extraContent,
+  className,
+  classNametopContainer,
+  classNameMainContainer,
+}) => {
   console.log(extraContent, "facili");
   const cardData = content.imageCard;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,8 +37,8 @@ const Facilities = ({ content, extraContent, className }) => {
 
   return (
     <>
-      <div className="container5" id="container5">
-        <div className="topContainer5">
+      <div className={`${classNameMainContainer} container5`} id="container5">
+        <div className={`${classNametopContainer} topContainer5`}>
           <div>
             <SectionName sectionText={content.sectionName} weight="700" />
             <SectionTitle

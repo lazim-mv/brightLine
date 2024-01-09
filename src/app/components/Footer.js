@@ -18,11 +18,13 @@ const Footer = () => {
       </div>
       <div className="quickLinks">
         <h3>Quick links</h3>
-        <a href="">About</a>
-        <a href="">Learnings</a>
-        <a href="">Facilities</a>
-        <a href="">School</a>
-        <a href="">Student Space</a>
+        <div>
+          <a href="">About</a>
+          <a href="">Learnings</a>
+          <a href="">Facilities</a>
+          <a href="">School</a>
+          <a href="">Student Space</a>
+        </div>
       </div>
       <div className="footerContactUs">
         <h3>Contact Us</h3>
