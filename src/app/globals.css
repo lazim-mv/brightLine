@@ -76,6 +76,10 @@ a {
   font-family: var(--font-Khula);
 }
 
+.linksText{
+  font-weight: 400;
+}
+
 .active a, .active h4 {
   color: #5A1E90 ;
   font-weight: 600 ;
@@ -130,6 +134,7 @@ a {
 .rightArrow{
   width: 1.3671875vw !important;
   height: 0.9114583333333334vw !important;
+  margin-bottom: 4px;
 }
 
 .btnFill{
@@ -172,8 +177,8 @@ a {
 .topVisibleContainer,
 .bottomVisibleContainer {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 58%;
+  left: 54%;
   transform: translate(-50%, -50%);
   transition: transform 0.5s ease !important;
   width: 100%;
@@ -429,6 +434,7 @@ a {
   /* margin-bottom: 9.765625vw; */
   padding: var(--backgroundContainerPadding);
   background: #F6F6F9;  
+  overflow: hidden;
 }
 
 /* Carousel.module.css */
@@ -809,6 +815,21 @@ a {
 .footer .socialIconsContainer .socialMediaIconContainer:hover{
   background: black;
 }
+
+.copyRight{
+  grid-column: 1/5;
+}
+
+.copyRight p{
+  margin: 0 auto;
+}
+
+hr{
+  width: 100%;
+  height: 1px;
+  margin-bottom: 1.953125vw;
+}
+
 
 /* Container9 End */
 
@@ -1252,6 +1273,10 @@ a {
     border-radius: 13.333333333333334vw;
   }
 
+  .copyRight{
+    grid-column: auto
+  }
+
   hr{
     margin: 4vw auto 5.333333333333334vw auto;
     width: 100%;
@@ -1282,6 +1307,7 @@ a {
 
   .hMenu h4{
     font-size: 3.733333333333334vw;
+    font-weight: 500;
   }
 
 }

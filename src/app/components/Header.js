@@ -48,8 +48,8 @@ function Header() {
                   }`}
                 >
                   <a href={item.href} className="linksWrapper">
-                    <h4 className="listHoverTop whiteSpace">{item.text}</h4>
-                    <h4 className="listHoverBottom whiteSpace">{item.text}</h4>
+                    <h4 className="listHoverTop whiteSpace linksText">{item.text}</h4>
+                    <h4 className="listHoverBottom whiteSpace linksText">{item.text}</h4>
                   </a>
                 </div>
               ))}
