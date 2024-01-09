@@ -13,7 +13,7 @@ const container2Data = [
   },
   {
     img: "/Container2/3.svg",
-    title: "Extra-curricular activities",
+    title: "KG to 10TH STD",
     description:
       "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
   },

@@ -4,7 +4,7 @@ import { BtnComponent, SectionName, SectionTitle } from "./ButtonComponent";
 import Image from "next/image";
 import ImageCard from "./ImageCard";
 
-const Facilities = ({ content, extraContent }) => {
+const Facilities = ({ content, extraContent, className }) => {
   console.log(extraContent, "facili");
   const cardData = content.imageCard;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,10 +34,7 @@ const Facilities = ({ content, extraContent }) => {
       <div className="container5" id="container5">
         <div className="topContainer5">
           <div>
-            <SectionName
-              sectionText={content.sectionName}
-              weight="700"
-            />
+            <SectionName sectionText={content.sectionName} weight="700" />
             <SectionTitle
               sectionText={content.sectionTitle}
               color="#282938"
@@ -69,7 +66,14 @@ const Facilities = ({ content, extraContent }) => {
             </div>
           </div>
         </div>
-        <div className="carouselWrapper" style={{height:extraContent ? "29.947916666666668vw" : "28.645833333333332vw"}}>
+        <div
+          className={`${className} carouselWrapper`}
+          style={{
+            height: extraContent
+              ? "29.947916666666668vw"
+              : "28.645833333333332vw",
+          }}
+        >
           <div className="carousel">
             {cardData.map((data, index) => (
               <ImageCard

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { SectionDescription } from "./ButtonComponent";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
         <div className="footerIconContainer">
           <div>
             <Image
-              src="/footer/Maskgroup.png"
+              src="/Footer/Maskgroup.png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -44,7 +45,7 @@ const Footer = () => {
         <div className="footerIconContainer">
           <div>
             <Image
-              src="/footer/Maskgroup-1.png"
+              src="/Footer/Maskgroup-1.png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -60,7 +61,7 @@ const Footer = () => {
         <div className="footerIconContainer">
           <div>
             <Image
-              src="/footer/Maskgroup-2.png"
+              src="/Footer/Maskgroup-2.png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -81,7 +82,7 @@ const Footer = () => {
         <div className="socialIconsContainer">
           <div className="socialMediaIconContainer">
             <Image
-              src="/footer/1(4).png"
+              src="/Footer/1(4).png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -93,7 +94,7 @@ const Footer = () => {
           </div>
           <div className="socialMediaIconContainer">
             <Image
-              src="/footer/1(5).png"
+              src="/Footer/1(5).png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -105,7 +106,7 @@ const Footer = () => {
           </div>
           <div className="socialMediaIconContainer">
             <Image
-              src="/footer/1(6).png"
+              src="/Footer/1(6).png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -117,7 +118,7 @@ const Footer = () => {
           </div>
           <div className="socialMediaIconContainer">
             <Image
-              src="/footer/1(7).png"
+              src="/Footer/1(7).png"
               width={130}
               height={101}
               alt="ImageHeader"
@@ -128,6 +129,13 @@ const Footer = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="copyRight">
+        <hr />
+        <SectionDescription
+          sectionText="Copyright © 2023 Bright Line School. All rights reserved."
+          color="rgba(255, 255, 255, 0.60);"
+        />
       </div>
     </div>
   );

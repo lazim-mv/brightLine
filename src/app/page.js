@@ -27,7 +27,7 @@ export default function Home() {
         <Facilities content={container5Data}/>
         <Banner />
         <StudentSpace />
-        <Facilities content={container7Data}  extraContent={true}/>
+        <Facilities content={container7Data}  extraContent={true} className="container7"/>
         <Blogs />
         <ContactBanner />
         <Footer />

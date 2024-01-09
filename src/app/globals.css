@@ -1,6 +1,12 @@
 :root {
   --font-Khula: 'Khula', sans-serif;
   --font-Nunito: 'Nunito', sans-serif;
+  --containerPadding: 0 9.765625vw;
+  --containerMarginTop: 9.765625vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
 }
 
 * {
@@ -277,7 +283,7 @@ a {
 /* Container2 Start */
 .container2{
   margin-top: 6.510416666666667vw;
-  padding: 0 9.765625vw;
+  padding: var(--containerPadding)
 }
 
 .benefitsTopBox{
@@ -339,7 +345,7 @@ a {
 .container3{
   margin-top: 8.463541666666668vw;
   background: #F6F6F9;
-  padding: 6.510416666666667vw 9.765625vw;
+  padding: var(--backgroundContainerPadding);
   
   display: flex;
   gap: 3.90625vw;
@@ -359,8 +365,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 9.765625vw;
-  padding: 0 9.765625vw;
+  margin-top: var(--containerMarginTop);
+  padding: var(--containerPadding);
 }
 
 .container4Contents{
@@ -413,9 +419,9 @@ a {
 
 /* Container5 Start */
 .container5{
-  margin-top: 9.765625vw;
+  margin-top: var(--containerMarginTop);
   /* margin-bottom: 9.765625vw; */
-  padding: 6.510416666666667vw 9.765625vw;
+  padding: var(--backgroundContainerPadding);
   background: #F6F6F9;  
 }
 
@@ -545,8 +551,8 @@ a {
 /* Container6 Start */
 
 .container6{
-  margin-top: 9.765625vw;
-  padding: 0 9.765625vw;
+  margin-top: var(--containerMarginTop);
+  padding: var(--containerPadding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -630,11 +636,11 @@ a {
 /* Container8 Start */
 
 .container8{
-  margin-top: 9.765625vw;
+  margin-top: var(--containerMarginTop);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 9.765625vw;
+  padding: var(--containerPadding);
 }
 
 .blogsContentContainer{
@@ -662,8 +668,8 @@ a {
 /* Container9 Start */
 
 .container9{
-  margin-top: 9.765625vw;
-  padding: 0 9.765625vw;
+  margin-top: var(--containerMarginTop);
+  padding: var(--containerPadding);
 }
 
 .container9Contact{
@@ -696,8 +702,8 @@ a {
 /* Container9 Start */
 
 .footer{
-  margin-top: 9.765625vw;
-  padding: 0 9.765625vw;
+  margin-top: var(--containerMarginTop);
+  padding: var(--containerPadding);
   padding-top: 5.208333333333334vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -799,3 +805,437 @@ a {
 }
 
 /* Container9 End */
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 9.6vw; 
+    font-weight: 600;
+    font-family: var(--font-Khula);
+  }
+  
+  .heroTitle{
+    line-height: 11.520000000000001vw;
+    width: 87.2vw;
+  }
+  
+  h2 {
+    font-size: 6.4vw; 
+    font-weight: 600;
+    line-height: 7.680000000000001vw;
+    font-family: var(--font-Khula);
+    width: 83.2vw !important;
+    padding-bottom: 2.666666666666667vw !important;
+  }
+  
+  h3 {
+    font-size: 4.8vw; 
+    font-weight: 600;
+    line-height: 5.760000000000001vw;
+    font-family: var(--font-Khula);
+    padding-bottom: 1.3333333333333335vw !important;
+  }
+  
+  h4 {
+    font-size: 3.733333333333334vw;
+    font-weight: 400;
+    line-height: 7.466666666666668vw;
+    font-family: var(--font-Nunito);
+    padding-bottom: 1.3333333333333335vw !important;
+  }
+  
+  p {
+    font-size: 3.733333333333334vw;
+    font-weight: 500;
+    font-family: var(--font-Nunito);
+    color: #696969;
+    font-style: normal;
+    line-height: 5.226666666666667vw;
+    width: 87.2vw !important;
+  }
+  
+  a {
+    font-size: 1.04vw;
+    text-decoration: none;
+    color: #282938;
+    font-family: var(--font-Khula);
+  }
+
+  .buttonText{
+    font-size: 3.733333333333334vw;
+    line-height: 4.4799999999999995vw;
+  }
+
+  .btnContainer{
+    width: 35.46666666666667vw !important;
+    height: 9.866666666666667vw;
+    border-radius: 13.333333333333334vw;
+  }
+
+
+
+  .hContainer{
+    display: none;
+  }
+
+  .heroContianer{
+    height: 160vw;
+  }
+
+  .heroContianer img{
+    object-position: -200px; 
+    height: 160vw;
+    object-fit: cover;
+  }
+
+  .container2{
+    margin-top: 10.666666666666668vw;
+    padding: 0 6.4vw;
+  }
+
+  .benefitsTopBox{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .benefitBottomBox{
+    margin-top: 6.666666666666667vw;
+    gap: 4vw;
+  }
+
+  .cardContainer{
+    width: 41.6vw;
+    height: 45.86666666666667vw;
+    gap: 0;
+  }
+
+  .cardIcon{
+    width: 13.333333333333334vw !important;
+    height: 13.333333333333334vw !important;
+    margin-bottom: 4vw;
+    margin-top: 1.3333333333333335vw;
+  }
+
+  .cardContent p{
+    width: 41.6vw !important;
+  }
+  
+  .secondCol div{
+    display: none;
+  }
+  .container3{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileBackgroundContainerPadding);
+
+    flex-direction: column;
+    gap: 10.666666666666668vw;
+  }
+
+  .aboutImage{
+    width: 87.2vw !important;
+    height: 66.192vw !important;
+  }
+
+  .aboutContent{
+    order: -1;
+  }
+
+  .aboutContent .btnContainer{
+    margin-top: 4vw !important;
+  }
+
+  .rightArrow{
+    width: 4vw !important;
+    height: 2.666666666666667vw !important;
+    object-position: initial !important;
+  }
+
+  .container4{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .container4Contents{
+    width: auto;
+  }
+
+  .container4Contents h2, p{
+    width: auto !important;
+  }
+
+  .container4CardContainer{
+    margin-top: 8vw;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .imageCardBackground{
+    width: 66.66666666666666vw;
+    height: 66.66666666666666vw;
+    border-radius: 2.666666666666667vw;
+  }
+
+  .imageCardContent{
+    width: 100%;
+  }
+
+  .imageCardContent h3{
+    width: 100%;
+  }
+
+  .container4 .btnContainer{
+    margin-top: 8vw !important;
+  }
+
+  .container5{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileBackgroundContainerPadding);
+    padding-top: 41.6vw;
+  }
+
+  .container5 .carouselWrapper{
+    margin-top: 0;
+  }
+
+  .container5 .topContainer5{
+    display: none;
+  }
+
+  .carouselButtonContainer{
+    display: none;
+  }
+
+  .carouselWrapper{
+    margin-top: 7.199999999999999vw;
+    height: 74.9vw !important;
+    width: auto;
+    overflow-x: scroll;
+    padding-bottom: 0.5333333333333333vw;
+  }
+
+  .carousel{
+    gap: 4vw;
+  }
+
+  .imageContainer{
+    margin-left: 4vw;
+  }
+
+  .imageContainer img{
+    width: 62.66666666666667vw ;
+    height: 70.39999999999999vw ; 
+    border-radius: 2.666666666666667vw;
+  }
+
+  .imageFrame{
+    width: 62.66666666666667vw ;
+    height: 70.39999999999999vw ;
+    right: 3.802083vw;
+    top: 3.802083vw;
+  }
+
+  .topContainer5 h4 h2{
+    text-align: center;
+  }
+
+  .imageContainer .imageCardContent {
+    width: 65%;
+  }
+  
+  .faciliteiesBannerContainer5{
+
+  }
+
+  .faciliteiesBannerContainer5 .heroContianer .hImage{
+    object-position: -140.333333vw; 
+    height: 160vw;
+    object-fit: cover;
+  }
+
+  .faciliteiesBannerContainer5 .absolute h2{
+    padding-bottom: 4vw !important;
+  }
+
+  .container6{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .studentSpaceImageContainerGrid{
+    grid-template-columns: 66.66666666666666vw 66.66666666666666vw 66.66666666666666vw 66.66666666666666vw 66.66666666666666vw;;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 4vw;
+  }
+
+  .item img{
+    height: 63.303733333333334vw;
+    width: 66.66666666666666vw;
+    border-radius: 2.666666666666667vw;
+  }
+
+  .studentSpaceImageContainerGrid .item{
+    grid-row: auto;
+  }
+
+  .container5 .btnContainer{
+    margin-top: 8vw !important;
+  }
+
+  .container6 .btnContainer{
+    margin-top: 8vw !important;
+  }
+
+  .container7 .btnContainer{
+    margin-top: 8vw !important;
+  }
+  
+  .container8 .btnContainer{
+    margin-top: 8vw !important;
+  }
+
+  .container7{
+    height: auto !important;
+  }
+
+  .container7 .relative img{
+    width: 66.66666666666666vw;
+    height: 56.5872vw !important;
+  }
+
+  .container7 .schoolEvent{
+    width: auto;
+  }
+
+  .container7 .carousel .imageContainer{
+    margin-left: 0;
+  }
+
+
+  .container8{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .blogsContentContainer p{
+    padding: 0 !important;
+  }
+
+  .container8 .carousel{
+    margin-top: 8vw !important;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .container8 .relative img{
+    width: 66.66666666666666vw !important;
+    height: 56.5872vw !important;
+  }
+
+  .container8 .blogsCardContent{
+    width: 100%;
+  }
+
+  .blogsCardContent .dateAndRoundPoint {
+    width: 40vw;
+    height: 7.466666666666668vw;
+    margin-bottom: 2.666666666666667vw;
+  }
+
+  .container9{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .container9Contact{
+    width: 87.2vw;
+    height: 81.06666666666666vw;
+    border-radius: 5.333333333333334vw;
+  }
+
+  .container9Contact .btnContainer{
+    margin-top: 4vw !important;
+  }
+
+  .container9Contact .hImage{
+    top: 75%;
+    width: 87.2vw;
+    height: 14.399999999999999vw;
+  }
+
+  .footer{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileContainerPadding);
+    padding-top: 8vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16vw 29.86666666666667vw 40.8vw 16.53333333333333vw 22.400000000000002vw;
+    height: 165.6vw;
+    gap: 8vw;
+  }
+
+  .footer .quickLinks{
+    height: 29.86666666666667vw;
+    flex-wrap: wrap;
+  }
+
+  .footer h3{
+    line-height: 5.760000000000001vw;
+  }
+
+  .footer a{
+    font-size: 3.733333333333334vw;
+    line-height: 5.226666666666667vw;
+  }
+
+  .footer div{
+    gap: 2vw;
+  }
+
+  .footer .logo{
+    width: 19.7024vw;
+    height: 16vw;
+  }
+
+  .footer .logo img{
+    width: 17.057866666666666vw;
+    height: 13.355466666666665vw;
+  }
+
+  .footer .socialIconsContainer{
+    gap: 2.666666666666667vw;
+  }
+
+  .footer .footerContactUs {
+    gap: 2.666666666666667vw;
+  }
+
+  .footer .footerIconContainer{
+    gap: 2.666666666666667vw;
+  }
+
+  .footer .footerIconContainer div {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 13.333333333333334vw;
+  }
+
+  .footerIcon{
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+
+  
+  .footer .socialIconsContainer .socialMediaIconContainer {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 13.333333333333334vw;
+  }
+
+  hr{
+    margin: 4vw auto 5.333333333333334vw auto;
+    width: 100%;
+    height: 1px;
+  }
+
+}

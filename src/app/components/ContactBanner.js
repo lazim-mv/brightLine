@@ -5,6 +5,7 @@ import vector from "../../../public/Container9/1.png";
 import {
   BtnComponent,
   SectionDescription,
+  SectionName,
   SectionTitle,
 } from "./ButtonComponent";
 
@@ -21,6 +22,12 @@ const ContactBanner = () => {
           unoptimized
         />
         <div className=" container9Content absolute">
+        <SectionName 
+            sectionText={container9Data.sectionName}
+            dashText={true}
+            color="#fff"
+            textAllign="center"
+        />
           <SectionTitle
             sectionText={container9Data.sectionTitle}
             color="#fff"
