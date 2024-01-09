@@ -61,7 +61,7 @@ const nunito = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${khula.variable}${nunito.variable}`}>{children}</body>
+      <body >{children}</body>
     </html>
   );
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,500;6..12,700&display=swap');
+
 :root {
   --font-Khula: 'Khula', sans-serif;
   --font-Nunito: 'Nunito', sans-serif;
@@ -53,7 +55,7 @@ h3 {
 
 h4 {
   font-size: 1.302083333333333vw;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.8229166666666667vw;
   font-family: var(--font-Nunito);
 }
@@ -224,6 +226,10 @@ a {
 }
 
 /* Header Start */
+
+.mHeader{
+  display: none;
+}
 
 .hContainer{
   display: flex;
@@ -815,7 +821,7 @@ a {
   
   .heroTitle{
     line-height: 11.520000000000001vw;
-    width: 95vw;
+    width: 87.2vw;
   }
   
   h2 {
@@ -837,7 +843,7 @@ a {
   
   h4 {
     font-size: 3.733333333333334vw;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 7.466666666666668vw;
     font-family: var(--font-Nunito);
     padding-bottom: 1.3333333333333335vw !important;
