@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="footerContactUs">
         <h3>Contact Us</h3>
         <div className="footerIconContainer">
-          <div>
+          <div className="iconRoundBackground" >
             <Image
               src="/Footer/Maskgroup.png"
               width={130}
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div className="footerIconContainer">
-          <div>
+          <div className="iconRoundBackground">
             <Image
               src="/Footer/Maskgroup-1.png"
               width={130}
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="footerIconContainer">
-          <div>
+          <div className="iconRoundBackground">
             <Image
               src="/Footer/Maskgroup-2.png"
               width={130}

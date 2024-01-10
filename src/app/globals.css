@@ -159,11 +159,7 @@ a {
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    rgba(150, 93, 233, 1) 10.8%,
-    rgba(99, 88, 238, 1) 94.3%
-  );
+  background: #5A1E90;
   transition: all 0.475s;
 }
 
@@ -431,7 +427,6 @@ a {
 /* Container5 Start */
 .container5{
   margin-top: var(--containerMarginTop);
-  /* margin-bottom: 9.765625vw; */
   padding: var(--backgroundContainerPadding);
   background: #F6F6F9;  
   overflow: hidden;
@@ -602,7 +597,7 @@ a {
 }
 
 .item1 img{
-  height: 48.828125vw;
+  height: 44.27083333333333vw;
 }
 
 .item1 {
@@ -766,6 +761,10 @@ a {
 
 .footer .footerContactUs{
   gap: 0.9765625vw;
+}
+
+.footer .footerIconContainer:hover .iconRoundBackground{
+    background-color: black;
 }
 
 .footer .footerIconContainer{
@@ -995,8 +994,10 @@ hr{
   .container4CardContainer{
     margin-top: 8vw;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 100vw;
     overflow-x: scroll;
+    padding-left: 6.4vw;
+    gap: 4vw;
   }
 
   .imageCardBackground{
@@ -1013,25 +1014,23 @@ hr{
     width: 100%;
   }
 
+  .imageCard .imageCardContent p {
+    display: block;
+    padding-bottom: 4vw;
+  }
+
   .container4 .btnContainer{
     margin-top: 8vw !important;
   }
 
   .container5{
     margin-top: var(--mobileContainerMarginTop);
-    padding: var(--mobileBackgroundContainerPadding);
+    padding: 0;
+    padding-bottom: 10.666666666666668vw;
   }
 
   .container5 .carouselWrapper{
     margin-top: 0;
-  }
-
-  .mainContainer7{
-    padding-top: 41.6vw;
-  }
-
-  .container5 .topContainer7{
-    display: none;
   }
 
   .carouselButtonContainer{
@@ -1040,10 +1039,11 @@ hr{
 
   .carouselWrapper{
     margin-top: 7.199999999999999vw;
-    height: 74.9vw !important;
+    height: 78.7vw !important;
     width: auto;
     overflow-x: scroll;
-    padding-bottom: 0.5333333333333333vw;
+    /* padding-bottom: 0.5333333333333333vw; */
+    padding-left: 6.4vw;
   }
 
   .carousel{
@@ -1065,6 +1065,12 @@ hr{
     height: 70.39999999999999vw ;
     right: 3.802083vw;
     top: 3.802083vw;
+    border-radius: 2.666666666666667vw
+  }
+
+  .topContainer5{
+    padding: var(--mobileBackgroundContainerPadding);
+    padding-bottom: 0;
   }
 
   .topContainer5 h4 h2{
@@ -1097,8 +1103,9 @@ hr{
   .studentSpaceImageContainerGrid{
     grid-template-columns: 66.66666666666666vw 66.66666666666666vw 66.66666666666666vw 66.66666666666666vw 66.66666666666666vw;;
     overflow-x: scroll;
-    width: 100%;
+    width: 100vw;
     gap: 4vw;
+    padding-left: 6.4vw;
   }
 
   .item img{
@@ -1156,8 +1163,13 @@ hr{
 
   .container8 .carousel{
     margin-top: 8vw !important;
-    width: 100%;
+    width: 100vw;
     overflow-x: scroll;
+    padding-left: 6.4vw;
+  }
+
+  .container8 .carousel .imageContainer{
+    margin-left: 0%;
   }
 
   .container8 .relative img{
@@ -1290,24 +1302,80 @@ hr{
     height: 65px;
     align-items: center;
   }
+  
+  .bar{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #4a4a4a;
+    transition: transform .3s ease ;
+    display: block;
+  }
+
+  .bar:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .bar:nth-child(2){
+    bottom: 0;
+    left: 0;
+  }
+
+  .open .bar:nth-child(1){
+    top: 11px;
+    transform: rotate(45deg);
+  }
+
+  .open .bar:nth-child(2){
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
 
   .fixedmHeadContainer{
     width: 100%;
   }
 
   .mHeader button{
-    width: 10.666666666666668vw;
-    height: 10.666666666666668vw;
+    width: 2.2rem;
+    height: 14px;
+    background: transparent;
   }
 
   .hMenu{
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .hMenu h4{
     font-size: 3.733333333333334vw;
     font-weight: 500;
   }
+
+  .bannerImage{
+    margin-top: 0;
+  }
+
+  .container4CardContainer::-webkit-scrollbar {
+    width: 0;  
+  }
+
+  .carouselWrapper::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .container8::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .studentSpaceImageContainerGrid::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .container8 .carousel::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  
 
 }
