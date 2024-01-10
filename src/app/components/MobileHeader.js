@@ -90,7 +90,7 @@ function MobileHeader() {
             top: "4rem",
             right: 0,
             width: "100vw",
-            height: isMenuOpen ? "100vh" : "0vh",
+            height: isMenuOpen ? "auto" : "0vh",
             backgroundColor: "#f6f6f9",
             zIndex: 52,
             display: "flex",
