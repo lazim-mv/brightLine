@@ -18,7 +18,6 @@ function Header() {
     { text: "Blogs ", href: "/pages/Contact/" },
   ];
 
-  console.log(pathname)
 
   return (
     <>

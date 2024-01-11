@@ -10,6 +10,8 @@ function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  console.log(pathname,"jkfsdfjdks")
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -20,8 +22,8 @@ function MobileHeader() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About", href: "/pages/About/" },
-    { text: "Learnings", href: "/pages/About/" },
+    { text: "About", href: "/pages/About" },
+    { text: "Learnings", href: "/pages/Abot/" },
     { text: "Facilities", href: "/pages/Services/" },
     { text: "School", href: "/School" },
     { text: "Student Space", href: "/Student" },
@@ -113,7 +115,7 @@ function MobileHeader() {
             {menuList.map((item, index) => (
               <div
                 key={index}
-                className={`visibleWrapperContainer w-Auto ${
+                className={` ${
                   pathname !== undefined &&
                   pathname !== null &&
                   pathname !== "" &&
@@ -122,9 +124,8 @@ function MobileHeader() {
                     : ""
                 }`}
               >
-                <a href={item.href} className="linksWrapper">
-                  <h4 className="listHoverTop whiteSpace">{item.text}</h4>
-                  <h4 className="listHoverBottom whiteSpace">{item.text}</h4>
+                <a href={item.href} className="linksWrapper linksText">
+                  {item.text}
                 </a>
               </div>
             ))}

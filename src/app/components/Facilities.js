@@ -11,7 +11,6 @@ const Facilities = ({
   classNametopContainer,
   classNameMainContainer,
 }) => {
-  console.log(extraContent, "facili");
   const cardData = content.imageCard;
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -25,7 +24,6 @@ const Facilities = ({
       setCurrentIndex(0);
     }
   };
-  console.log(currentIndex);
 
   const prevImage = () => {
     if (currentIndex > 0) {

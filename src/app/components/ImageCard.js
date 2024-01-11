@@ -12,7 +12,6 @@ const ImageCard = ({
   blogCard,
   blogDesc
 }) => {
-  console.log(extraContent, "imageCard");
 
   return (
     <div
