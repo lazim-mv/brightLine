@@ -1,5 +1,5 @@
 import React from "react";
-import { container9Data } from "../Contents";
+import { container9Data } from "../contents/Contents";
 import Image from "next/image";
 import vector from "../../../public/Container9/1.png";
 import {

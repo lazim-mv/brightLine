@@ -9,14 +9,16 @@ function Header() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About", href: "/pages/About/" },
-    { text: "Learnings", href: "/pages/About/" },
+    { text: "About", href: "/pages/About" },
+    { text: "Learnings", href: "/pages/Abo/" },
     { text: "Facilities", href: "/pages/Services/" },
     { text: "School", href: "/School" },
     { text: "Student Space", href: "/Student" },
     { text: "Events", href: "/Events" },
     { text: "Blogs ", href: "/pages/Contact/" },
   ];
+
+  console.log(pathname)
 
   return (
     <>

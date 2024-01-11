@@ -1,6 +1,6 @@
 import React from "react";
 import ImageCard from "./ImageCard";
-import { container8Data } from "../Contents";
+import { container8Data } from "../contents/Contents";
 import {
   BtnComponent,
   SectionDescription,

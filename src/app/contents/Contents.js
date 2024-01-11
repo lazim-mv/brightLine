@@ -1,41 +1,48 @@
-const container2Data = [
-  {
-    img: "/Container2/1.svg",
-    title: "KG to 10TH STD",
-    description:
-      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
-  },
-  {
-    img: "/Container2/2.svg",
-    title: "Expert Instructor",
-    description:
-      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
-  },
-  {
-    img: "/Container2/3.svg",
-    title: "KG to 10TH STD",
-    description:
-      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
-  },
-  {
-    img: "/Container2/4.svg",
-    title: "KG to 10TH STD",
-    description:
-      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
-  },
-  {
-    img: "/Container2/5.svg",
-    title: "KG to 10TH STD",
-    description:
-      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
-  },
-  {
-    img: "/Container2/6.svg",
-    title: "KG to 10TH STD",
-    description:
-      "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
-  },
-];
+const container2Data = {
+  sectionName: "Benefits of Bright Line School",
+  sectionTitle: "Experience the Best with Signature",
+  buttonText: "Know more",
+  description:
+    "Risus scelerisque a non turpis vitae malesuada sed venenatis. In fringilla commodo suspendisse nunc enim tristique.",
+  imageCard: [
+    {
+      img: "/Container2/1.svg",
+      title: "KG to 10TH STD",
+      description:
+        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+    },
+    {
+      img: "/Container2/2.svg",
+      title: "Expert Instructor",
+      description:
+        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+    },
+    {
+      img: "/Container2/3.svg",
+      title: "KG to 10TH STD",
+      description:
+        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+    },
+    {
+      img: "/Container2/4.svg",
+      title: "KG to 10TH STD",
+      description:
+        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+    },
+    {
+      img: "/Container2/5.svg",
+      title: "KG to 10TH STD",
+      description:
+        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+    },
+    {
+      img: "/Container2/6.svg",
+      title: "KG to 10TH STD",
+      description:
+        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+    },
+  ],
+};
 
 const container3Data = {
   img: "/Container3/about.png",
@@ -252,7 +259,7 @@ const container8Data = {
 };
 
 const container9Data = {
-  img:"/Container9/1.png",
+  img: "/Container9/1.png",
   sectionName: "Contact ",
   sectionTitle: "New strategies that lead",
   description:

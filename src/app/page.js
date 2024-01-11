@@ -7,7 +7,7 @@ import Strategies from "./components/Strategies";
 import Facilities from "./components/Facilities";
 import StudentSpace from "./components/StudentSpace";
 import Banner from "./components/Banner";
-import { container5Data, container7Data } from "./Contents";
+import { container5Data, container7Data } from "./contents/Contents";
 import Blogs from "./components/Blogs";
 import ContactBanner from "./components/ContactBanner";
 import Footer from "./components/Footer";

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const Card = ({ img, title, description }) => {
+const Card = ({ img, title, description, className }) => {
   return (
-    <div className="cardContainer">
+    <div className={`cardContainer ${className}`}>
       <Image
         className="cardIcon"
         src={img}

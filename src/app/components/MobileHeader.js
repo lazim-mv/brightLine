@@ -106,8 +106,8 @@ function MobileHeader() {
             className="hMenu"
             style={{
               height: isMenuOpen ? "auto" : 0,
-              transform: isMenuOpen ? "translateY(0)" : "translateY(30px)",
-              transition: "transform 0.4s ease, height 0.5s ease",
+              transform: isMenuOpen ? "translateY(0)" : "translateY(-4.8vw)",
+              transition: "transform 0.4s ease, height 0.1s ease",
             }}
           >
             {menuList.map((item, index) => (

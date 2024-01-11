@@ -96,7 +96,7 @@ const SectionName = ({
     <h4
       style={{
         color: color ? color : "#5A1E90",
-        fontWeight: weight,
+        fontWeight: weight ? weight : "700",
         padding: padding ? padding : "0 0 1.3020833333333335vw 0",
         textAlign: textAllign,
       }}
@@ -137,6 +137,7 @@ const SectionDescription = ({
   padding,
   width,
   textAllign,
+  margin
 }) => {
   return (
     <p
@@ -146,6 +147,7 @@ const SectionDescription = ({
         paddingBottom: padding,
         width: width,
         textAlign: textAllign,
+        margin:margin,
       }}
     >
       {sectionText}

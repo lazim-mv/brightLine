@@ -5,7 +5,7 @@ import {
   SectionName,
   SectionTitle,
 } from "./ButtonComponent";
-import { container6Data } from "../Contents";
+import { container6Data } from "../contents/Contents";
 import Image from "next/image";
 
 const StudentSpace = () => {

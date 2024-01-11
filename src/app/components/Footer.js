@@ -136,7 +136,7 @@ const Footer = () => {
         <hr />
         <SectionDescription
           sectionText="Copyright © 2023 Bright Line School. All rights reserved."
-          color="rgba(255, 255, 255, 0.60);"
+          color="rgba(255, 255, 255, 0.60)"
         />
       </div>
     </div>

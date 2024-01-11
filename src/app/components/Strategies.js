@@ -5,7 +5,7 @@ import {
   SectionName,
   SectionTitle,
 } from "./ButtonComponent";
-import { container4Data } from "../Contents";
+import { container4Data } from "../contents/Contents";
 import ImageCard from "./ImageCard";
 
 const Strategies = () => {

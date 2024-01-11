@@ -1,0 +1,318 @@
+.container {
+    --font-Khula: 'Khula', sans-serif;
+    --font-Nunito: 'Nunito', sans-serif;
+    --containerPadding: 0 9.765625vw;
+    --containerMarginTop: 9.765625vw;
+    --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+    --mobileContainerMarginTop: 16vw;
+    --mobileContainerPadding: 0 6.4vw;
+    --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  }
+
+.container1{
+  margin-top: 4.557291666666666vw;
+  padding: var(--containerPadding);
+}
+
+.aboutBannerImageContainer{
+  margin-top: 4.557291666666666vw;
+  width: 78.90625vw;
+  height: 44.27083333333333vw;
+}
+
+.aboutBannerImageContainer img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1.3020833333333335vw;
+}
+
+.container2{
+    margin-top: calc(var(--containerMarginTop) + 2.278645833333333vw);
+    padding: var(--containerPadding);
+}
+
+.cardContainer{
+  width: 78.90625vw;
+  height: 14.973958333333334vw;
+  gap: 3.90625vw;
+  padding: 0 3.90625vw;
+  background: #F6F6F9;
+  border-radius: 1.3020833333333335vw;
+  display: grid;
+  grid-template-columns: 21.09375vw 21.09375vw 21.09375vw;
+  position: relative;
+  padding-bottom: 3.2552083333333335vw;
+}
+
+.aboutItem{
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutItem img{
+  position: absolute;
+  top: -15%;
+}
+
+.aboutItem .container2Contents{
+  width: 21.09375vw;
+  position: absolute;
+  top:28%;
+}
+
+.container2Contents h3{
+  margin-bottom: 0.6510416666666667vw;
+}
+
+.container3{
+  margin-top: var(--containerMarginTop);
+  padding: var(--backgroundContainerPadding);
+  height: 82.74739583333334vw;
+  background: #F6F6F9;
+}
+
+.container3{
+  height: auto;
+  margin-top: var(--containerMarginTop);
+  padding: var(--backgroundContainerPadding);
+}
+
+.vissionMissionContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 4.557291666666666vw;
+}
+
+.mission, .vission{
+  display: flex;
+  align-items: center;
+  gap: 3.90625vw;
+}
+
+.vissionMissionImage{
+  width: 37.5vw;
+  height: 32.55208333333333vw;
+  border-radius: 1.3020833333333335vw;
+}
+
+.vissionMissionContent{
+  width: 100%;
+}
+
+.vissionMissionContent p{
+  width: 37.5vw;
+}
+
+.container4{
+  margin-top: var(--containerMarginTop);
+  padding: var(--containerPadding);
+
+}
+
+.profilesContainer{
+  display: flex;
+  gap: 2.604166666666667vw;
+  margin-top: 4.557291666666666vw;
+}
+
+.profileContainer{
+  width: 18.229166666666664vw;
+}
+
+.profileContainer img{
+  width: 18.229166666666664vw;
+  height: 20.833333333333336vw;
+  border-radius: 1.3020833333333335vw;
+  margin-bottom: 0.6510416666666667vw;
+}
+
+.profileContainer h3{
+  text-align: center;
+  margin-bottom: 0.32552083333333337vw;
+}
+
+.container5{
+  margin-top: var(--containerMarginTop);
+  padding: var(--containerPadding);
+}
+
+.faculties{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.953125vw;
+  margin-top: 4.557291666666666vw;
+}
+
+.faculty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.32552083333333337vw;
+  align-items: center;
+  width: 18.229166666666664vw;
+  height: 6.770833333333333vw;
+  background-color: #F6F6F9;
+  border-radius: 1.3020833333333335vw;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .container1{
+    margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .aboutBannerImageContainer{
+    width: auto;
+    height: 106.66666666666667vw;
+    margin-top: 8vw;
+  }
+
+  .aboutBannerImageContainer img{
+    object-fit: cover;
+    border-radius: 2.666666666666667vw;
+  }
+
+
+
+  .container2{
+    margin-top: 16vw;
+    padding: var(--mobileContainerPadding);
+    margin-left: 6.4vw;
+  }
+
+  .cardContainer{
+    grid-template-rows: 24.53333333333333vw 24.53333333333333vw 24.53333333333333vw;
+    grid-template-columns: 80.53333333333333vw;
+    height:97.6vw;
+    width: 80.53333333333333vw;
+    gap: 5.333333333333334vw;
+    padding: 8vw 5.333333333333334vw 5.333333333333334vw 0;
+  }
+
+  .aboutItem{
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 4vw;
+    height: 24.53333333333333vw;
+  }
+
+  .aboutImage{
+    width: 13.333333333333334vw;
+    height: 13.333333333333334vw;
+    align-self: flex-start;
+    margin-top: -2%;
+  }
+
+  .aboutItem img{
+    position: relative;
+  }
+
+  .aboutItem{
+    margin-left: -9%;
+  }
+
+  .aboutItem .container2Contents{
+    position: relative;
+    width: 64.53333333333333vw;
+    top: auto;
+  }
+
+  .container3{
+    height: auto;
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileBackgroundContainerPadding);
+  }
+
+  .vissionMissionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10.666666666666668vw;
+  }
+  
+  .mission, .vission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .mission .vissionMissionContent{
+    order: -1;
+    margin-bottom: 8vw;
+  }
+
+  .vission .vissionMissionContent{
+    margin-bottom: 8vw;
+  }
+  
+  .vissionMissionImage{
+    width: 87.2vw;
+    height: 75.6944vw;
+    border-radius: 2.666666666666667vw;
+  }
+  
+  .vissionMissionContent{
+    width: 100%;
+  }
+
+  .vissionMissionContent h2{
+    text-align: center;
+  }
+  
+  .vissionMissionContent p{
+    text-align: center;
+  }
+
+  .container4{
+    margin-top: var(--containerMarginTop);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .profilesContainer{
+    gap: 3.333333333333334vw;
+    flex-wrap: wrap;
+    margin-top: 8vw;
+  }
+
+  .profilesContainer .profileContainer:nth-child(1){
+    height: calc(61.6vw + 5.333333333333334vw);
+  }
+
+  .profileContainer{
+    width: 41.6vw;
+    height: calc(61.6vw);
+  }
+
+  .profileContainer img{
+    width: 41.6vw;
+    height: 47.544vw;
+    margin-bottom: 2.666666666666667vw;
+  }
+
+  .profileContainer h3{
+    margin-bottom: 0;
+  }
+
+  .container5{
+    margin-top: var(--mobileContainerMarginTop);
+    padding: var(--mobileContainerPadding);
+  }
+
+  .faculties{
+    margin-top: 8vw;
+    gap: 4vw;
+  }
+
+  .faculty{
+    width: 41.6vw;
+    height: 19.2vw;
+    border-radius: 2.666666666666667vw;
+  }
+
+  
+}

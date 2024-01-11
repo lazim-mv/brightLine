@@ -6,7 +6,7 @@ import {
   SectionName,
   SectionTitle,
 } from "./ButtonComponent";
-import { container3Data } from "../Contents";
+import { container3Data } from "../contents/Contents";
 
 const About = () => {
   return (

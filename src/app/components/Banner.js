@@ -2,7 +2,7 @@ import React from "react";
 import { BtnComponent, SectionTitle } from "./ButtonComponent";
 import Image from "next/image";
 import bannerImage from "../../../public/Container5/5.png";
-import { container5Data } from "../Contents";
+import { container5Data } from "../contents/Contents";
 
 
 const Banner = () => {

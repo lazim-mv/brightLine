@@ -1,20 +1,21 @@
 import React from "react";
 import {  SectionName, SectionTitle } from "./ButtonComponent";
 import Card from "./Card";
-import { container2Data } from "../Contents";
+import { container2Data } from "../contents/Contents";
 
 const Benefits = () => {
+  const cardData = container2Data.imageCard
   return (
     <div className="container2">
       <div className="benefitsTopBox">
         <div className=".col">
           <SectionName
-            sectionText="Benefits of Bright Line School"
+            sectionText={container2Data.sectionName}
             color="#5A1E90"
             weight="700"
           />
           <SectionTitle
-            sectionText="Experience the Best with Signature"
+            sectionText={container2Data.sectionTitle}
             color="#282938"
             width="32.421875vw"
           />
@@ -22,13 +23,12 @@ const Benefits = () => {
         <div className="col secondCol">
           <div></div>
           <p className="benefitsDesc">
-            Risus scelerisque a non turpis vitae malesuada sed venenatis. In
-            fringilla commodo suspendisse nunc enim tristique.
+           {container2Data.description}
           </p>
         </div>
       </div>
       <div className="benefitBottomBox">
-        {container2Data.map((data, index) => (
+        {cardData.map((data, index) => (
           <div key={index}>
             <Card
               img={data.img}
