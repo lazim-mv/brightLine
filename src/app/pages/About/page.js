@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../Styles/aboutus.module.css";
+import styles from "../../styles/aboutus.module.css";
 import {
   aboutPageContainer1,
   aboutPageContainer2,
