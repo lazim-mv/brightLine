@@ -185,13 +185,17 @@
     margin-left: 6.4vw;
   }
 
+  .container2 h2{
+    margin-left: -6.4vw;
+  }
+
   .cardContainer{
     grid-template-rows: 24.53333333333333vw 24.53333333333333vw 24.53333333333333vw;
     grid-template-columns: 80.53333333333333vw;
     height:97.6vw;
     width: 80.53333333333333vw;
     gap: 5.333333333333334vw;
-    padding: 8vw 5.333333333333334vw 5.333333333333334vw 0;
+    padding: 8vw 0 8vw 0;
   }
 
   .aboutItem{

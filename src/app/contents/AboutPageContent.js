@@ -21,13 +21,13 @@ const aboutPageContainer2 = {
         "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
     },
     {
-      img: "/AboutPage/Icons/1(1).svg",
+      img: "/AboutPage/Icons/1(2).svg",
       title: "KG to 10TH STD",
       description:
         "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
     },
     {
-      img: "/AboutPage/Icons/1(1).svg",
+      img: "/AboutPage/Icons/1(3).svg",
       title: "KG to 10TH STD",
       description:
         "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",

@@ -14,7 +14,6 @@ import {
   SectionTitle,
 } from "@/app/components/ButtonComponent";
 import Header from "@/app/components/Header";
-import Card from "@/app/components/Card";
 import ContactBanner from "@/app/components/ContactBanner";
 import Footer from "@/app/components/Footer";
 import MobileHeader from "@/app/components/MobileHeader";
