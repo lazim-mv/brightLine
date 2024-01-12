@@ -10,6 +10,7 @@ const Facilities = ({
   className,
   classNametopContainer,
   classNameMainContainer,
+  href
 }) => {
   const cardData = content.imageCard;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -92,6 +93,7 @@ const Facilities = ({
             ))}
           </div>
         </div>
+        <a href={href ? href : "pages/Facilites"}>
         <BtnComponent
           arrow={true}
           bg="transparrent"
@@ -101,6 +103,7 @@ const Facilities = ({
           margin="4.557291666666666vw auto 0 auto"
           borderColor="#5A1E90"
         />
+        </a>
       </div>
     </>
   );

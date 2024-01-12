@@ -10,7 +10,7 @@ function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  console.log(pathname,"jkfsdfjdks")
+  console.log(pathname, "jkfsdfjdks");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,8 +23,8 @@ function MobileHeader() {
   const menuList = [
     { text: "Home", href: "/" },
     { text: "About", href: "/pages/About" },
-    { text: "Learnings", href: "/pages/Abot/" },
-    { text: "Facilities", href: "/pages/Services/" },
+    { text: "Learnings", href: "/pages/Learnings" },
+    { text: "Facilities", href: "/pages/Facilities" },
     { text: "School", href: "/School" },
     { text: "Student Space", href: "/Student" },
     { text: "Events", href: "/Events" },
@@ -89,7 +89,7 @@ function MobileHeader() {
         <div
           style={{
             position: "fixed",
-            top: "4rem",
+            top: "21.333333333333336vw",
             right: 0,
             width: "100vw",
             height: isMenuOpen ? "auto" : "0vh",
@@ -113,9 +113,9 @@ function MobileHeader() {
             }}
           >
             {menuList.map((item, index) => (
-              <div
+              <a
                 key={index}
-                className={` ${
+                className={`linksWrapper linksText ${
                   pathname !== undefined &&
                   pathname !== null &&
                   pathname !== "" &&
@@ -123,13 +123,16 @@ function MobileHeader() {
                     ? "active"
                     : ""
                 }`}
+                href={item.href}
+                style={{ transform: isMenuOpen ? "translateY(0)" : "translateY(-100vw)" }}
               >
-                <a href={item.href} className="linksWrapper linksText">
-                  {item.text}
-                </a>
-              </div>
+                {item.text}
+              </a>
             ))}
-            <a href="tel:971 568 352 250" style={{display: isMenuOpen ? 'block' : 'none'}}>
+            <a
+              href="tel:971 568 352 250"
+              style={{ display: isMenuOpen ? "block" : "none" }}
+            >
               <BtnComponent
                 bg="#5A1E90"
                 color="#ffffff"

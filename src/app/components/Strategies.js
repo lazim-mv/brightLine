@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    BtnComponent,
+  BtnComponent,
   SectionDescription,
   SectionName,
   SectionTitle,
@@ -43,7 +43,8 @@ const Strategies = () => {
           </div>
         ))}
       </div>
-      <BtnComponent 
+      <a href="/pages/Learnings">
+        <BtnComponent
           borderColor="#5A1E90"
           color="#5A1E90"
           width="12.630208333333334vw"
@@ -52,6 +53,7 @@ const Strategies = () => {
           arrow="true"
           h5Margin="0 0.6510416666666667vw 0 0"
         />
+      </a>
     </div>
   );
 };

@@ -10,8 +10,8 @@ function Header() {
   const menuList = [
     { text: "Home", href: "/" },
     { text: "About", href: "/pages/About" },
-    { text: "Learnings", href: "/pages/Abo/" },
-    { text: "Facilities", href: "/pages/Services/" },
+    { text: "Learnings", href: "/pages/Learnings" },
+    { text: "Facilities", href: "/pages/Facilities/" },
     { text: "School", href: "/School" },
     { text: "Student Space", href: "/Student" },
     { text: "Events", href: "/Events" },

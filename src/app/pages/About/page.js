@@ -58,6 +58,7 @@ const page = () => {
       <SectionTitle 
         sectionText={aboutPageContainer2.sectionTitle}
         textAllign='center'
+        width="60.611979166666664vw"
       />
         <div className={styles.cardContainer}>
           {cardData.map((data, index) => (

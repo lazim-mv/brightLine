@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import {
-    BtnComponent,
+  BtnComponent,
   SectionDescription,
   SectionName,
   SectionTitle,
@@ -38,15 +38,17 @@ const About = () => {
           sectionText={container3Data.description}
           width="35.546875vw"
         />
-        <BtnComponent 
-          borderColor="#5A1E90"
-          color="#5A1E90"
-          width="12.630208333333334vw"
-          buttonText={container3Data.buttonText}
-          margin="1.3020833333333335vw 0 0 0"
-          arrow="true"
-          h5Margin="0 0.6510416666666667vw 0 0"
-        />
+        <a href="/pages/About">
+          <BtnComponent
+            borderColor="#5A1E90"
+            color="#5A1E90"
+            width="12.630208333333334vw"
+            buttonText={container3Data.buttonText}
+            margin="1.3020833333333335vw 0 0 0"
+            arrow="true"
+            h5Margin="0 0.6510416666666667vw 0 0"
+          />
+        </a>
       </div>
     </div>
   );
