@@ -93,7 +93,7 @@ const Facilities = ({
             ))}
           </div>
         </div>
-        <a href={href ? href : "pages/Facilites"}>
+        <a href={href ? href : "pages/Facilities"}>
         <BtnComponent
           arrow={true}
           bg="transparrent"

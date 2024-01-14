@@ -10,7 +10,7 @@ const Banner = () => {
     <div className="faciliteiesBannerContainer5">
       <div className="heroContianer bannerImage">
         <Image
-          className="hImage"
+          className="hImage bannerhImage"
           src={bannerImage}
           alt="Asian Engineer"
           quality={100}

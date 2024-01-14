@@ -269,11 +269,15 @@ a {
   position: relative;
   width: 100vw;
   height: 45.57291666666667vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
 }
 
 .heroContianer img{
   width: 100vw ;
   height: 45.57291666666667vw ;
+  animation: slideAnimation 8s  infinite; 
 }
 
 .heroTitle{
@@ -283,14 +287,46 @@ a {
   line-height: 5vw; 
   text-transform: capitalize;
 
-  /* width: 35%; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Hero Start */
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  11.1111111111% {
+    transform: translateX(0);
+  }
+  22.2222222222% {
+    transform: translateX(0);
+  }
+  33.3333333333% {
+    transform: translateX(0);
+  }
+  44.4444444444% {
+    transform: translateX(-100%); 
+  }
+  55.5555555555% {
+    transform: translateX(-100%); 
+  }
+  66.6666666666% {
+    transform: translateX(-100%);
+  }
+  77.7777777777% {
+    transform: translateX(-200%); 
+  }
+  88.8888888888% {
+    transform: translateX(-200%); 
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Hero end */
 
 
 /* Container2 Start */
@@ -553,6 +589,7 @@ a {
 
 .bannerImage img{
   height: 42.31770833333333vw;
+  animation: none;
 }
 
 .bannerImage .absolute{
@@ -774,12 +811,31 @@ a {
   cursor: pointer;
 }
 
+.footer a{
+  position: relative;
+}
+
+.footer a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.60) 100%);
+  transition: width 0.3s ease; 
+}
+
+.footer a:hover::before {
+  width: 100%;
+}
+
 .footer .footerContactUs{
   gap: 0.9765625vw;
 }
 
 .footer .footerIconContainer:hover .iconRoundBackground{
-    background-color: black;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.20) 100%);
 }
 
 .footer .footerIconContainer{
@@ -827,7 +883,7 @@ a {
 }
 
 .footer .socialIconsContainer .socialMediaIconContainer:hover{
-  background: black;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.20) 100%);
 }
 
 .copyRight{

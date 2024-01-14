@@ -13,6 +13,22 @@ const Hero = () => {
         priority={true}
         unoptimized
       />
+      <Image
+        className="hImage"
+        src={heroImg}
+        alt="Asian Engineer"
+        quality={100}
+        priority={true}
+        unoptimized
+      />
+      <Image
+        className="hImage"
+        src={heroImg}
+        alt="Asian Engineer"
+        quality={100}
+        priority={true}
+        unoptimized
+      />
       <h1 className="heroTitle">Leading to Brightness Creating minds</h1>
     </div>
   );
