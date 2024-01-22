@@ -1,0 +1,31 @@
+.blogsPageContainer {
+  margin-top: 4.62962962962963vw;
+}
+
+.blogsPageContainer .blogsPagecarousel {
+  flex-wrap: wrap;
+  gap: 2.6455026455026456vw;
+  margin-top: 4.62962962962963vw;
+}
+
+.blogsPagecarousel div {
+  margin-left: 0;
+}
+
+.blogsPagecarousel div:nth-child(2) {
+  width: 24.933862433862434vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .blogsPageContainer {
+    margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
+  }
+
+  .blogsPageContainer .blogsPagecarousel {
+    gap: 5.333333333333334vw;
+  }
+
+  .blogsPagecarousel div:nth-child(2) {
+    width: 82vw;
+  }
+}

@@ -11,14 +11,14 @@ function Header() {
     { text: "Home", href: "/" },
     { text: "About", href: "/pages/About" },
     { text: "Learnings", href: "/pages/Learnings" },
-    { text: "Facilities", href: "/pages/Facilities/" },
+    { text: "Facilities", href: "/pages/Facilities" },
     { text: "School", href: "/School" },
-    { text: "Student Space", href: "/Student" },
-    { text: "Events", href: "/Events" },
-    { text: "Blogs ", href: "/pages/Contact/" },
+    { text: "Student Space", href: "/pages/StudentSpace" },
+    { text: "Events", href: "/pages/SchoolEvents" },
+    { text: "Blogs ", href: "/pages/Blogs" },
   ];
 
-
+console.log(pathname)
   return (
     <>
       <div className="hContainer bg-white">

@@ -1274,6 +1274,16 @@ hr{
     height: 56.5872vw !important;
   }
 
+  .container8 .relative .blogsPage {
+    width: 87.2vw !important;
+    height: 74.016vw !important;
+  }
+
+  .container8 .imageContainer  .schoolEvents {
+    width: 87.2vw !important;
+    height: 74.016vw !important;
+  }
+
   .container8 .blogsCardContent{
     width: 100%;
   }

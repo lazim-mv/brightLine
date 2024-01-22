@@ -10,7 +10,8 @@ const ImageCard = ({
   currentIndex,
   carousel,
   blogCard,
-  blogDesc
+  blogDesc,
+  className
 }) => {
 
   return (
@@ -20,16 +21,16 @@ const ImageCard = ({
         transform: currentIndex ? `translateX(-${currentIndex * 28}vw)` : "",
       }}
     >
-      <div className={carousel ? "relative" : ""}>
+      <div className={carousel ? `relative ` : ""}>
         <Image
-          className={carousel ? "" : "imageCardBackground"}
+          className={carousel ? `${className}` : `imageCardBackground ${className}`}
           src={img}
           alt="Asian Engineer"
           width={100}
           height={100}
           quality={100}
           priority={true}
-          unoptimized
+          unoptimized 
           style={{
             height: extraContent ? "20.833333333333336vw" : "",
           }}
