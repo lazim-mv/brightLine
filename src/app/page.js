@@ -35,6 +35,7 @@ export default function Home() {
           className="container7"
           classNametopContainer="topContainer7"
           classNameMainContainer="mainContainer7"
+          href="/pages/SchoolEvents"
         />
         <Blogs />
         <ContactBanner />

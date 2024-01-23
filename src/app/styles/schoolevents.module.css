@@ -14,6 +14,10 @@
   margin-left: 0;
 }
 
+.schoolEvents img{
+  height: 21.164021164021165vw !important;
+}
+
 .schoolEvents div:nth-child(2) {
   width: 24.933862433862434vw;
 }

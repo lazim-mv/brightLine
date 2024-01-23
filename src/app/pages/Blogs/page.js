@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "../../styles/blogspage.module.css";
 import {
-  BtnComponent,
-  SectionDescription,
   SectionName,
   SectionTitle,
 } from "@/app/components/ButtonComponent";

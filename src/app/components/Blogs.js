@@ -47,15 +47,17 @@ const Blogs = () => {
           />
         ))}
       </div>
-      <BtnComponent
-        arrow={true}
-        bg="transparrent"
-        color="#5A1E90"
-        buttonText={container8Data.buttonText}
-        width="12.630208333333334vw"
-        margin="4.557291666666666vw auto 0 auto"
-        borderColor="#5A1E90"
-      />
+      <a href="/pages/Blogs">
+        <BtnComponent
+          arrow={true}
+          bg="transparrent"
+          color="#5A1E90"
+          buttonText={container8Data.buttonText}
+          width="12.630208333333334vw"
+          margin="4.557291666666666vw auto 0 auto"
+          borderColor="#5A1E90"
+        />
+      </a>
     </div>
   );
 };

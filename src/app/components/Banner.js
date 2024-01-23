@@ -25,6 +25,7 @@ const Banner = () => {
             padding="0 0 1.3020833333333335vw 0"
             // width="44.40104166666667vw"
           />
+          <a href="/pages/School">
           <BtnComponent
             arrow={true}
             bg="transparrent"
@@ -35,6 +36,7 @@ const Banner = () => {
             borderColor="#fff"
             arrowColor={true}
           />
+          </a>
         </div>
       </div>
     </div>

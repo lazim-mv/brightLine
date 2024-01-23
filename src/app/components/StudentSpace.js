@@ -52,6 +52,7 @@ const StudentSpace = () => {
           </div>
         ))}
       </div>
+      <a href="/pages/StudentSpace">
       <BtnComponent 
         buttonText={container6Data.buttonText}
         arrow={true}
@@ -61,6 +62,7 @@ const StudentSpace = () => {
         margin="4.557291666666666vw 0 0 0"
 
       />
+      </a>
     </div>
   );
 };

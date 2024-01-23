@@ -1,0 +1,126 @@
+.container {
+  --font-Khula: "Khula", sans-serif;
+  --font-Nunito: "Nunito", sans-serif;
+  --containerPadding: 0 9.765625vw;
+  --containerMarginTop: 9.765625vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --schoolPagePadding : 0 16.534391534391535vw;
+}
+
+.admission {
+  margin-top: 4.62962962962963vw;
+  padding: var(--schoolPagePadding);
+}
+
+.one {
+  margin-top: 1.3227513227513228vw;
+  margin-bottom: 0.6613756613756614vw;
+}
+
+.two {
+  margin-bottom: 0.6613756613756614vw;
+}
+
+.pointsContianer {
+  display: flex;
+  align-items: center;
+  gap: 0.6613756613756614vw;
+}
+
+.point {
+  width: 0.992063492063492vw;
+  height: 0.992063492063492vw;
+  background: #5a1e90;
+  border-radius: 50%;
+}
+
+.bgContainer {
+  width: 66.93121693121694vw;
+  background: #f6f6f9;
+  padding: 1.984126984126984vw 2.6455026455026456vw;
+  margin-top: 2.6455026455026456vw;
+  border-radius: 1.3227513227513228vw;
+}
+
+.gradesPoints {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.3227513227513228vw;
+}
+
+.gradesPoints .one,
+.two,
+.three {
+  margin: 0;
+}
+
+.gradesPoints p {
+  width: 28.968253968253972vw;
+}
+
+.gradesPoints .one,
+.two {
+  margin-bottom: 0.6613756613756614vw;
+}
+
+.gradesPoints .two {
+  margin-bottom: 0.6613756613756614vw;
+}
+
+.rulesAndDiscipline {
+  margin-top: 4.62962962962963vw;
+  padding: var(--schoolPagePadding);
+}
+
+.disciplinePoints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.984126984126984vw;
+}
+
+.disciplinePoints .one,
+.two,
+.three {
+  margin: 0;
+}
+
+.disciplinePoints .pointsContianer {
+  width: 32.47354497354497vw;
+  align-items: flex-start;
+}
+
+.disciplinePoints .point {
+  margin-top: 0.5291005291005291vw;
+}
+
+.scholasticActivities {
+  margin-top: 4.62962962962963vw;
+  padding: var(--schoolPagePadding);
+}
+
+.scholasticActivities .two {
+  margin-bottom: 0.6613756613756614vw;
+}
+
+.scholasticActivities .pointsContianer{
+    align-items: flex-start;
+}
+
+.scholasticActivities .point{
+    margin-top: 0.5291005291005291vw;
+}
+
+.discipline {
+  margin-top: 4.62962962962963vw;
+  padding: var(--schoolPagePadding);
+}
+
+@media only screen and (max-width: 767px) {
+  .admission {
+    margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
+    padding: var(--mobileContainerPadding);
+  }
+}

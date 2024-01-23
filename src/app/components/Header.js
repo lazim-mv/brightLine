@@ -12,7 +12,7 @@ function Header() {
     { text: "About", href: "/pages/About" },
     { text: "Learnings", href: "/pages/Learnings" },
     { text: "Facilities", href: "/pages/Facilities" },
-    { text: "School", href: "/School" },
+    { text: "School", href: "/pages/School" },
     { text: "Student Space", href: "/pages/StudentSpace" },
     { text: "Events", href: "/pages/SchoolEvents" },
     { text: "Blogs ", href: "/pages/Blogs" },
@@ -55,7 +55,7 @@ console.log(pathname)
                 </div>
               ))}
           </div>
-        <a href="tel:971 568 352 250">
+        <a href="/pages/Contact">
           <BtnComponent
             bg="#5A1E90"
             color="#ffffff"

@@ -22,12 +22,12 @@ const ContactBanner = () => {
           unoptimized
         />
         <div className=" container9Content absolute">
-        <SectionName 
+          <SectionName
             sectionText={container9Data.sectionName}
             dashText={true}
             color="#fff"
             textAllign="center"
-        />
+          />
           <SectionTitle
             sectionText={container9Data.sectionTitle}
             color="#fff"
@@ -42,16 +42,18 @@ const ContactBanner = () => {
             width="38.15104166666667vw"
             textAllign="center"
           />
-          <BtnComponent
-            arrow={true}
-            bg="transparrent"
-            color="#fff"
-            buttonText={container9Data.buttonText}
-            width="12.630208333333334vw"
-            margin="0 auto"
-            borderColor="#fff"
-            arrowColor={true}
-          />
+          <a href="/pages/Contact">
+            <BtnComponent
+              arrow={true}
+              bg="transparrent"
+              color="#fff"
+              buttonText={container9Data.buttonText}
+              width="12.630208333333334vw"
+              margin="0 auto"
+              borderColor="#fff"
+              arrowColor={true}
+            />
+          </a>
         </div>
       </div>
     </div>

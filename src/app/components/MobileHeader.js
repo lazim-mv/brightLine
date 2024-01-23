@@ -25,7 +25,7 @@ function MobileHeader() {
     { text: "About", href: "/pages/About" },
     { text: "Learnings", href: "/pages/Learnings" },
     { text: "Facilities", href: "/pages/Facilities" },
-    { text: "School", href: "/School" },
+    { text: "School", href: "/pages/School" },
     { text: "Student Space", href: "/pages/StudentSpace" },
     { text: "Events", href: "/pages/SchoolEvents" },
     { text: "Blogs ", href: "/pages/Blogs" },
@@ -124,13 +124,17 @@ function MobileHeader() {
                     : ""
                 }`}
                 href={item.href}
-                style={{ transform: isMenuOpen ? "translateY(0)" : "translateY(-100vw)" }}
+                style={{
+                  transform: isMenuOpen
+                    ? "translateY(0)"
+                    : "translateY(-100vw)",
+                }}
               >
                 {item.text}
               </a>
             ))}
             <a
-              href="tel:971 568 352 250"
+              href="/pages/Contact"
               style={{ display: isMenuOpen ? "block" : "none" }}
             >
               <BtnComponent

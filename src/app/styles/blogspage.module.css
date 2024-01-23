@@ -12,6 +12,10 @@
   margin-left: 0;
 }
 
+.blogsPagecarousel img{
+  height: 21.164021164021165vw !important;
+}
+
 .blogsPagecarousel div:nth-child(2) {
   width: 24.933862433862434vw;
 }
