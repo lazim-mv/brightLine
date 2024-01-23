@@ -1,4 +1,5 @@
-"use client";
+/* Hero.js */
+"use client"
 import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import heroImg from "../../../public/hero.png";
@@ -8,24 +9,30 @@ import hhsss from "../../../public/AboutPage/1(2).png";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
 
   const images = useMemo(
     () => [heroImg, hh, hhss, hhsss], // Add more images as needed
     []
   );
 
-  // Preload images
   useEffect(() => {
-    images.forEach((image) => {
-      const img = new window.Image();
-      img.src = image.src;
+    // Preload images
+    const promises = images.map((image) => {
+      return new Promise((resolve) => {
+        const img = new window.Image();
+        img.src = image.src;
+        img.onload = () => resolve();
+      });
     });
+
+    Promise.all(promises).then(() => setLoaded(true));
   }, [images]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -36,22 +43,26 @@ const Hero = () => {
 
   return (
     <div className="heroContainer">
-      <div className="heroCarousels">
+      <div
+        className={`heroCarousels ${loaded ? "loaded" : ""}`}
+        style={{
+          transform: `translateX(-${activeIndex * 100}%)`,
+          transition: loaded ? "transform 1s ease" : "none",
+        }}
+      >
         {images.map((image, index) => (
           <div
             key={index}
-            className={`carousel-item ${index === activeIndex ? "activeDot" : ""}`}
+            className="carousel-item"
           >
-            {index === activeIndex && (
-              <Image
-                className="hImage"
-                src={image}
-                alt={`Asian Engineer ${index + 1}`}
-                quality={100}
-                priority={true}
-                unoptimized={index !== activeIndex} 
-              />
-            )}
+            <Image
+              className={`hImage ${index === activeIndex ? "activeImage" : "notActiveImage"}`}
+              src={image}
+              alt={`Asian Engineer ${index + 1}`}
+              quality={100}
+              priority={true}
+              unoptimized={index !== activeIndex}
+            />
           </div>
         ))}
       </div>
