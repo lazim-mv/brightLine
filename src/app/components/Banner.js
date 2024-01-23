@@ -8,7 +8,7 @@ import { container5Data } from "../contents/Contents";
 const Banner = () => {
   return (
     <div className="faciliteiesBannerContainer5">
-      <div className="heroContianer bannerImage">
+      <div className="heroContainer bannerImage">
         <Image
           className="hImage bannerhImage"
           src={bannerImage}

@@ -264,28 +264,37 @@ a {
 
 /* Header End */
 
-/* Hero Start */
+/* Hero.css */
 
-.heroContianer{
+.heroContainer {
   position: relative;
   width: 100vw;
   height: 45.57291666666667vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   overflow: hidden;
-}
-
-.heroContianer img{
-  width: 100vw ;
   height: 45.57291666666667vw ;
-  animation: slideAnimation 8s  infinite; 
 }
 
-.heroTitle{
+.heroCarousels {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  position: absolute;
+}
+
+.heroContainer img{
+  width: 100vw ;
+
+  /* animation: slideAnimation 8s  infinite;  */
+}
+
+.heroTitle {
   color: #FFF;
   text-align: center;
   font-style: normal;
-  line-height: 5vw; 
+  line-height: 5vw;
   text-transform: capitalize;
 
   position: absolute;
@@ -294,38 +303,40 @@ a {
   transform: translate(-50%, -50%);
 }
 
-@keyframes slideAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  11.1111111111% {
-    transform: translateX(0);
-  }
-  22.2222222222% {
-    transform: translateX(0);
-  }
-  33.3333333333% {
-    transform: translateX(0);
-  }
-  44.4444444444% {
-    transform: translateX(-100%); 
-  }
-  55.5555555555% {
-    transform: translateX(-100%); 
-  }
-  66.6666666666% {
-    transform: translateX(-100%);
-  }
-  77.7777777777% {
-    transform: translateX(-200%); 
-  }
-  88.8888888888% {
-    transform: translateX(-200%); 
-  }
-  100% {
-    transform: translateX(-200%);
-  }
+.dotsContainer {
+  display: flex;
+  gap: 0.5vw;
+  position: absolute;
+  bottom: 1vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+.activeDot {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Add this style for the sliding effect */
+.activeDot {
+  transform: scale(1.2);
+  transition: transform 1s ease;
+  background: #fff;
+}
+
+/* Hero end */
+
 
 /* Hero end */
 
@@ -983,12 +994,12 @@ hr{
     display: none;
   }
 
-  .heroContianer{
+  .heroContainer{
     height: 160vw;
     margin-top: 21.333333333333336vw;
   }
 
-  .heroContianer img{
+  .heroContainer img{
     object-position: -200px; 
     height: 160vw;
     object-fit: cover;
@@ -1183,7 +1194,7 @@ hr{
 
   }
 
-  .faciliteiesBannerContainer5 .heroContianer .hImage{
+  .faciliteiesBannerContainer5 .heroContainer .hImage{
     object-position: -140.333333vw; 
     height: 160vw;
     object-fit: cover;
