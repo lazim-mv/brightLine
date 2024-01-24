@@ -55,16 +55,16 @@ function MobileHeader() {
         }}
         className="mHeaderContainer"
       >
-        <a href="/">
-          <div
-            style={{
-              fontSize: "1.25rem",
-              fontWeight: 600,
-              color: "#333",
-              width: "22.666666666666664vw",
-              height: "13.333333333333334vw",
-            }}
-          >
+        <div
+          className="logoAndHamburger"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "87.2vw",
+          }}
+        >
+          <a href="/">
             <Image
               src="/logo.png"
               width={120}
@@ -75,22 +75,23 @@ function MobileHeader() {
                 height: "13.333333333333334vw",
               }}
             />
-          </div>
-        </a>
-        <button
-          aria-label="HamburgerMenu"
-          onClick={toggleMenu}
-          className={`hamburger-button ${isMenuOpen ? "open" : ""}`}
-          style={{ position: "relative", display: "flex", border: "none" }}
-        >
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </button>
+          </a>
+          <button
+            aria-label="HamburgerMenu"
+            onClick={toggleMenu}
+            className={`hamburger-button ${isMenuOpen ? "open" : ""}`}
+            style={{ position: "relative", display: "flex", border: "none" }}
+          >
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
+        </div>
+
         <div
           style={{
             position: "fixed",
             top: "21.333333333333336vw",
-            right: 0,
+            left: 0,
             width: "100vw",
             height: isMenuOpen ? "auto" : "0vh",
             backgroundColor: "#f6f6f9",
@@ -98,7 +99,7 @@ function MobileHeader() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "24px",
+            padding: "10px 0 30px 0",
             gap: "10px",
             opacity: isMenuOpen ? 1 : 0,
             transition: "opacity 0.4s ease",

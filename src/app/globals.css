@@ -1285,6 +1285,14 @@ hr {
     margin-left: 0;
   }
 
+  .container7 .relative{
+    width: 66.66666666666666vw;
+  }
+
+  .container7 .relative .dateAndRoundPoint p{
+    width: auto !important;
+  }
+
   .container8 {
     margin-top: var(--mobileContainerMarginTop);
     padding: var(--mobileContainerPadding);
@@ -1440,7 +1448,7 @@ hr {
   .mHeader {
     display: flex;
     padding: var(--mobileContainerPadding);
-    height: 21.333333333333336vw;
+    /* height: 21.333333333333336vw; */
     align-items: center;
   }
 
@@ -1478,8 +1486,8 @@ hr {
   }
 
   .mHeader button {
-    width: 2.2rem;
-    height: 14px;
+    width: 8vw;
+    height: 3.733333333333334vw;
     background: transparent;
   }
 
