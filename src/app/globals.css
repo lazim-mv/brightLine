@@ -620,15 +620,15 @@ a {
   position: relative;
 }
 
-.item  .imageCardContent p {
-  height: 0 ;
-  opacity: 0 ;
+.item .imageCardContent p {
+  height: 0;
+  opacity: 0;
   transition: height 0.3s ease-in-out, opacity 0.35s ease-in-out;
 }
 
 .item:hover .imageCardContent p {
-  height: 2.065951vw ;
-  opacity: 1 ;
+  height: 2.065951vw;
+  opacity: 1;
 }
 
 .imageCardContent h3 {
@@ -1100,8 +1100,11 @@ hr {
     width: auto;
   }
 
-  .container4Contents h2,
-  p {
+  .container4Contents h2 {
+    width: auto !important;
+  }
+  
+  .container4Contents p {
     width: auto !important;
   }
 

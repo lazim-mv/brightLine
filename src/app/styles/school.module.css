@@ -7,12 +7,16 @@
   --mobileContainerMarginTop: 16vw;
   --mobileContainerPadding: 0 6.4vw;
   --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
-  --schoolPagePadding : 0 16.534391534391535vw;
+  --schoolPagePadding: 0 16.534391534391535vw;
 }
 
 .admission {
   margin-top: 4.62962962962963vw;
   padding: var(--schoolPagePadding);
+}
+
+.firstPara {
+  margin-bottom: 0.6613756613756614vw;
 }
 
 .one {
@@ -105,12 +109,12 @@
   margin-bottom: 0.6613756613756614vw;
 }
 
-.scholasticActivities .pointsContianer{
-    align-items: flex-start;
+.scholasticActivities .pointsContianer {
+  align-items: flex-start;
 }
 
-.scholasticActivities .point{
-    margin-top: 0.5291005291005291vw;
+.scholasticActivities .point {
+  margin-top: 0.5291005291005291vw;
 }
 
 .discipline {
@@ -123,4 +127,111 @@
     margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
     padding: var(--mobileContainerPadding);
   }
+
+  .admission h2 {
+    padding-bottom: 2.666666666666667vw !important;
+  }
+
+  .admission :nth-child(2) {
+    padding: 0 !important;
+    margin-bottom: 1.3333333333333335vw !important;
+  }
+
+  .admission :nth-child(3) {
+    padding-bottom: 1.3333333333333335vw !important;
+  }
+
+  .gradesPoints {
+    gap: 1.3333333333333335vw;
+    margin-top: 2.666666666666667vw;
+  }
+
+  .pointsContianer {
+    gap: 1.3333333333333335vw;
+    align-items: flex-start;
+  }
+
+  .pointsContianer p {
+    padding-bottom: 0 !important;
+  }
+
+  .point {
+    width: 3.2vw;
+    height: 3.2vw;
+    margin-top: .8vw;
+  }
+
+  .gradesPoints .point {
+    margin-top: .8vw;
+  }
+
+  .bgContainer {
+    width: 87.2vw;
+    border-radius: 2.666666666666667vw;
+    padding: 5.333333333333334vw;
+  }
+
+  .admission .bgContainer :nth-child(2) {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .admission .bgContainer :nth-child(3) {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .rulesAndDiscipline{
+    padding: var(--mobileContainerPadding);
+    margin-top:  8vw;
+  }
+
+  .rulesAndDiscipline h2 {
+    padding-bottom: 2.666666666666667vw !important;
+  }
+
+  .disciplinePoints{
+    flex-direction: column;
+    gap: 1.3333333333333335vw;
+  }
+
+  .disciplinePoints .pointsContianer{
+    width: 87.2vw;
+  }
+
+  .gradesPoints .point{
+    margin-top: .8vw;
+  }
+
+  .scholasticActivities{
+    padding: var(--mobileContainerPadding);
+    margin-top:  8vw;
+  }
+
+  .scholasticActivities :nth-child(2){
+    padding-bottom: 1.3333333333333335vw !important;
+  }
+
+  .scholasticActivities .one{
+    margin:0;
+  }
+
+  .scholasticActivities .two{
+    margin:0;
+  }
+
+  .scholasticActivities .point{
+    margin-top: .8vw;
+  }
+
+  .discipline{
+    padding: var(--mobileContainerPadding);
+    margin-top:  8vw;
+  }
+
+  .discipline h2{
+    padding-bottom: 2.666666666666667vw;
+  }
+
+
 }
