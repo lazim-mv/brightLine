@@ -1292,7 +1292,7 @@ hr {
   .container7 .relative .dateAndRoundPoint p{
     width: auto !important;
   }
-
+  
   .container8 {
     margin-top: var(--mobileContainerMarginTop);
     padding: var(--mobileContainerPadding);
@@ -1357,6 +1357,10 @@ hr {
     top: 75%;
     width: 87.2vw;
     height: 14.399999999999999vw;
+  }
+
+  .container9Content p{
+    width: 79.2vw !important;
   }
 
   .footer {

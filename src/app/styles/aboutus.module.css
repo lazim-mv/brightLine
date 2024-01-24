@@ -158,6 +158,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  .mainContainer1 p{
+    width: auto !important;
+  }
+
   .container1{
     margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
     padding: var(--mobileContainerPadding);
