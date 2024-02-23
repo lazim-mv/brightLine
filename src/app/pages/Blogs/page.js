@@ -30,6 +30,7 @@ const page = () => {
             color="#282938"
             width="41.53645833333333vw"
             textAllign="center"
+            padding="0 !important"
           />
         </div>
         <div className={`${styles.blogsPagecarousel} carousel`}>

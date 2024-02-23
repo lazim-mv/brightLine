@@ -27,6 +27,7 @@
 
   .blogsPageContainer .blogsPagecarousel {
     gap: 5.333333333333334vw;
+    margin-top: 8vw;
   }
 
   .blogsPagecarousel div:nth-child(2) {

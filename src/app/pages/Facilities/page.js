@@ -23,6 +23,7 @@ const page = () => {
         <SectionTitle
           sectionText={facilitesData.sectionTitle}
           textAllign="center"
+          padding="0 !important"
         />
         <div className={styles.facilitiesCards}>
           {cardData.map((data, index) => (

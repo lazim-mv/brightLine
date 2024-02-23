@@ -6,6 +6,6 @@
 
 @media only screen and (max-width: 767px) {
   .studentSpaceCards img {
-    height: 80.95493333333333vw;
+    height: 81.06666666666666vw !important;
   }
 }

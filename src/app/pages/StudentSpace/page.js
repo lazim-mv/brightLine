@@ -24,6 +24,7 @@ const page = () => {
         <SectionTitle
           sectionText={studentSpaceData.sectionTitle}
           textAllign="center"
+          padding="0 !important"
         />
         <div className={`${styles.facilitiesCards} ${styled.studentSpaceCards}`}>
           {cardData.map((data, index) => (

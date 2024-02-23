@@ -4,7 +4,7 @@
   --font-Khula: "Khula", sans-serif;
   --font-Nunito: "Nunito", sans-serif;
   --containerPadding: 0 9.765625vw;
-  --containerMarginTop: 9.765625vw;
+  --containerMarginTop: 9.920634920634921vw;
   --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
   --mobileContainerMarginTop: 16vw;
   --mobileContainerPadding: 0 6.4vw;
@@ -35,34 +35,34 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  font-size: 4.17vw; /* Calculated for a similar visual size */
+  font-size: 4.232804232804233vw; 
   font-weight: 600;
   font-family: var(--font-Khula);
 }
 
 h2 {
-  font-size: 3.125vw; /* Calculated for a similar visual size */
+  font-size: 3.1746031746031744vw; 
   font-weight: 600;
   line-height: 3.75vw;
   font-family: var(--font-Khula);
 }
 
 h3 {
-  font-size: 1.692708333333333vw;
+  font-size: 1.7195767195767195vw;
   font-weight: 600;
   line-height: 2.03125vw;
   font-family: var(--font-Khula);
 }
 
 h4 {
-  font-size: 1.302083333333333vw;
+  font-size: 1.3227513227513228vw;
   font-weight: 500;
   line-height: 1.8229166666666667vw;
   font-family: var(--font-Nunito);
 }
 
 p {
-  font-size: 1.3020833333333335vw;
+  font-size: 1.3227513227513228vw;
   font-weight: 500;
   font-family: var(--font-Nunito);
   color: #696969;
@@ -78,6 +78,7 @@ a {
 }
 
 .linksText {
+  
   font-weight: 400;
 }
 
@@ -92,19 +93,19 @@ a {
 }
 
 .cardHeading {
-  font-size: 1.25vw; /* Calculated for a similar visual size */
+  font-size: 1.25vw; 
   font-weight: 600;
 }
 
 .buttonText {
-  font-size: 1.3020833333333335vw; /* Calculated for a similar visual size */
+  font-size: 1.3227513227513228vw; 
   font-weight: 600;
   font-family: var(--font-Khula);
   line-height: 1.5625vw;
 }
 
 .footerContent {
-  font-size: 1.04vw; /* Calculated for a similar visual size */
+  font-size: 1.04vw; 
   font-weight: 500;
 }
 
@@ -328,13 +329,14 @@ a {
   border-radius: 10px;
   cursor: pointer;
   transform: scale(1.3);
+  transition: transform .8s ease, background-color .8s ease;
 }
 
 /* Hero end */
 
 /* Container2 Start */
 .container2 {
-  margin-top: 6.510416666666667vw;
+  margin-top: 6.613756613756613vw;
   padding: var(--containerPadding);
 }
 
@@ -395,7 +397,7 @@ a {
 /* Container3 Start */
 
 .container3 {
-  margin-top: 8.463541666666668vw;
+  margin-top: 8.597883597883598vw;
   background: #f6f6f9;
   padding: var(--backgroundContainerPadding);
 
@@ -429,7 +431,7 @@ a {
   flex-wrap: wrap;
   gap: 2.604166666666667vw;
 
-  margin-top: 4.557291666666666vw;
+  margin-top: 4.62962962962963vw;
 }
 
 .imageCard {
@@ -491,7 +493,7 @@ a {
 .carouselWrapper {
   width: 100vw;
   overflow: hidden;
-  margin-top: 4.557291666666666vw;
+  margin-top: 4.62962962962963vw;
 }
 
 .carousel {
@@ -609,7 +611,7 @@ a {
 }
 
 .studentSpaceImageContainerGrid {
-  margin-top: 4.557291666666666vw;
+  margin-top: 4.62962962962963vw;
   display: grid;
   gap: 2.604166666666667vw;
   grid-template-columns: 29.752604166666668vw 21.940104166666664vw 21.940104166666664vw;
@@ -1041,6 +1043,10 @@ hr {
   .benefitBottomBox {
     margin-top: 6.666666666666667vw;
     gap: 5.333333333333334vw;
+  }
+
+  .container2 .cardContainer{
+    height: auto;
   }
 
   .cardContainer {

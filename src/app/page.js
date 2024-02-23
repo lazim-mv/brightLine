@@ -1,3 +1,4 @@
+"use client";
 import Head from "next/head";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -12,6 +13,7 @@ import Blogs from "./components/Blogs";
 import ContactBanner from "./components/ContactBanner";
 import Footer from "./components/Footer";
 import MobileHeader from "./components/MobileHeader";
+import { useEffect } from "react";
 
 export default function Home() {
   return (

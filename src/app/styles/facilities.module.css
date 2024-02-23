@@ -10,12 +10,12 @@
   }
 
   .container1{
-    margin-top: 4.557291666666666vw;
+    margin-top: 4.62962962962963vw;
     padding: var(--containerPadding);
   }
 
   .facilitiesCards{
-    margin-top: 4.557291666666666vw;
+    margin-top: 4.62962962962963vw;
     display: flex;
     flex-wrap: wrap;
     gap: 2.604166666666667vw;
@@ -29,6 +29,7 @@
 
     .facilitiesCards{
         gap: 5.333333333333334vw;
+        margin-top: 8vw;
     }
 
     .facilitiesCards img{

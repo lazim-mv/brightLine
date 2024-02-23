@@ -25,6 +25,7 @@ const page = () => {
           sectionText={learningContainer.sectionTitle}
           dashText={true}
           textAllign="center"
+          padding="0 !important"
         />
       </div>
       <div className={styles.cards}>

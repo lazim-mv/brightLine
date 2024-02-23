@@ -1,36 +1,35 @@
 const aboutPageContainer1 = {
   img: "/AboutPage/1(1).jpg",
   sectionName: "ABOUT US",
-  sectionTitle: "New strategies that lead",
+  sectionTitle: "Crafting Brilliance Through Education",
   description:
-    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintamet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintamet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintamet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintamet sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintamet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "Innovate, Educate, Illuminate—this encapsulates the essence of Bright Line School. As trailblazers in innovative training, we ignite individual brilliance by means of embracing cutting-edge gaining. At Bright Line, schooling isn't always the only technique; it is a transformative adventure wherein understanding serves as the guiding light, illuminating the path to a destiny enriched with opportunities. Our dedication extends beyond conventional limitations, designing a dynamic surrounding where students thrive academically, socially, and technologically. Join us in shaping a brighter tomorrow, where each scholar's potential is not just recognized but celebrated.",
 };
 
 const aboutPageContainer2 = {
   sectionName: "Benefits of Bright Line School",
   sectionTitle:
-    "why go solo? let business link guarantee business setup success!",
-  buttonText: "Know more",
+    "Discover Bright Line School: Empowering Minds, Building Futures",
   description:
     "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
   imageCard: [
     {
       img: "/AboutPage/Icons/1(1).svg",
-      title: "KG to 10TH STD",
+      title: "Innovative Approach",
       description:
-        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+        "We blend traditional values with modern techniques to create a dynamic learning environment.",
     },
     {
       img: "/AboutPage/Icons/1(2).svg",
-      title: "KG to 10TH STD",
+      title: "Diverse Learning",
       description:
-        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+        "Our curriculum caters to various learning styles, ensuring every student thrives.",
     },
     {
       img: "/AboutPage/Icons/1(3).svg",
-      title: "KG to 10TH STD",
+      title: "Future-Focused",
       description:
-        "Risus scelerisque a non turpis vitae malesuada commodo suspendisse nunc enim tristique.",
+        "Prepare for tomorrow's challenges with our tech-infused education and forward-thinking programs.",
     },
   ],
 };
@@ -38,15 +37,15 @@ const aboutPageContainer2 = {
 const aboutPageContainer3 = [
   {
     img: "/AboutPage/1(2).png",
-    title: "Our Mission",
+    title: "Mission Statement",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestas tellus convallis. Accumsan ullamcorper nunc sit quis egestas thre lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod future imperdiet. Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero.",
+      "Embarking on a adventure of excellence, Bright Line School is committed to empowering students with revolutionary schooling. We aspire to create a dynamic space wherein curiosity thrives, creativity blossoms, and world-wide views improve minds. Our challenge is to nurture not  only in academic brilliance but also the necessary life skills that paves path for life-long success. At Bright Line, we promise an academic experience that inspires, challenges, and prepares students for a future in which opportunities are limitless.",
   },
   {
     img: "/AboutPage/1(1).png",
-    title: "Our Vission",
+    title: "Vision Statement",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestas tellus convallis. Accumsan ullamcorper nunc sit quis egestas thre lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod future imperdiet. Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero.",
+      "Bright Line School envisions a future wherein each pupil emerges as a confident, empathetic, and forward-thinking leader. Guided by means of cutting-edge mastering, professional collaboration, and a dedication to excellence, we aspire to be a beacon of transformative training, shaping individuals who not only succeed academically but also make a valuable contribution to the world.",
   },
 ];
 
