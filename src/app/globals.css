@@ -374,7 +374,7 @@ a {
 }
 
 .cardContainer {
-  width: 24.544270833333336vw;
+  width: 24.444270833333336vw;
   height: 13.997395833333334vw;
 
   display: flex;
@@ -443,7 +443,7 @@ a {
 }
 
 .imageCardBackground {
-  width: 24.544270833333336vw;
+  width: 24.444270833333336vw;
   height: 24.544270833333336vw;
   border-radius: 1.3020833333333335vw;
 }
@@ -1335,7 +1335,11 @@ hr {
   }
 
   .container8 .blogsCardContent {
-    width: 100%;
+    width: 66.66666666666666vw;
+  }
+
+  .container8 .blogsCardContent p{
+    width: auto !important;
   }
 
   .blogsCardContent .dateAndRoundPoint {

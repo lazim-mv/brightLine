@@ -83,6 +83,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.984126984126984vw;
+  justify-content: space-between;
 }
 
 .disciplinePoints .one,
@@ -92,7 +93,7 @@
 }
 
 .disciplinePoints .pointsContianer {
-  width: 32.47354497354497vw;
+  width: 31.5vw;
   align-items: flex-start;
 }
 

@@ -1,6 +1,6 @@
 .container {
-  --font-Khula: 'Khula', sans-serif;
-  --font-Nunito: 'Nunito', sans-serif;
+  --font-Khula: "Khula", sans-serif;
+  --font-Nunito: "Nunito", sans-serif;
   --containerPadding: 0 9.765625vw;
   --containerMarginTop: 9.765625vw;
   --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
@@ -8,7 +8,6 @@
   --mobileContainerPadding: 0 6.4vw;
   --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
 }
-
 
 .container1 {
   margin-top: 4.62962962962963vw;
@@ -18,36 +17,37 @@
 .schoolEvents {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.6455026455026456vw;
+  gap: 2.4455026455026456vw;
   margin-top: 4.62962962962963vw;
+  justify-content: space-between;
 }
 
 .schoolEvents div {
   margin-left: 0;
+  width: 24.533862433862435vw;
 }
 
-.schoolEvents img{
+.schoolEvents img {
   height: 21.164021164021165vw !important;
-}
-
-.schoolEvents div:nth-child(2) {
-  width: 24.933862433862434vw;
 }
 
 
 @media only screen and (max-width: 767px) {
-    .container1 {
-      margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
-      padding: var(--mobileContainerPadding);
-    }
-  
-    .schoolEvents {
-      gap: 5.333333333333334vw;
-      margin-top: 8vw;
-    }
-  
-    .schoolEvents div:nth-child(2) {
-      width: 82vw;
-    }
+  .container1 {
+    margin-top: calc(10.666666666666668vw + 21.333333333333336vw);
+    padding: var(--mobileContainerPadding);
   }
-  
+
+  .schoolEvents {
+    gap: 5.333333333333334vw;
+    margin-top: 8vw;
+  }
+
+  .schoolEvents div {
+    width: auto;
+  }
+
+  .schoolEvents div:nth-child(2) {
+    width: 87.2vw;
+  }
+}

@@ -19,6 +19,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2.604166666666667vw;
+    justify-content: space-between;
+  }
+
+  .facilitiesCards div{
+    width: 24.433862433862435vw;
+  }
+
+  .facilitiesCards p{
+    padding-left: 1.3227513227513228vw;
+    padding-right: 1.3227513227513228vw;
   }
 
   @media only screen and (max-width: 767px) {
@@ -32,6 +42,10 @@
         margin-top: 8vw;
     }
 
+    .facilitiesCards div{
+      width: auto;
+    }
+
     .facilitiesCards img{
         width: 100%;
         height: 97.14586666666666vw;
@@ -40,12 +54,12 @@
 
   }
 
-  .ull{
+  /* .ull{
     margin-left: 100px;
     font-size: 20px;
   }
 
   .ull li::marker {
-    color: blue;      /* Change the color of the bullet point */
-    font-size: 24px;  /* Change the size of the bullet point */
-  }
+    color: blue;
+    font-size: 24px; 
+  } */

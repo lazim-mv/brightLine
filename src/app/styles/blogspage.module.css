@@ -6,19 +6,22 @@
   flex-wrap: wrap;
   gap: 2.6455026455026456vw;
   margin-top: 4.62962962962963vw;
+  justify-content: space-between;
 }
 
 .blogsPagecarousel div {
   margin-left: 0;
+  width: 24.433862433862435vw;
 }
 
 .blogsPagecarousel img{
   height: 21.164021164021165vw !important;
+  width: 100%;
 }
 
-.blogsPagecarousel div:nth-child(2) {
+/* .blogsPagecarousel div:nth-child(2) {
   width: 24.933862433862434vw;
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .blogsPageContainer {
@@ -30,7 +33,12 @@
     margin-top: 8vw;
   }
 
+  .blogsPagecarousel div {
+    margin-left: 0;
+    width: auto;
+  }
+
   .blogsPagecarousel div:nth-child(2) {
-    width: 82vw;
+    width: 87.2vw;
   }
 }
