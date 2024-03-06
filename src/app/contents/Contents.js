@@ -144,7 +144,7 @@ const container5Data = {
 
 const container6Data = {
   sectionName: "Student Space",
-  sectionTitle: "Inteeractive Student Community Spaces",
+  sectionTitle: "Interactive Student Community Spaces",
   description:
     "Engagе in intеractivе studеnt spacеs, еncouraging crеativity, collaboration, and innovation for a dynamic campus еnvironmеnt.",
   buttonText: "Know more",

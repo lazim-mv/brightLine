@@ -657,6 +657,8 @@ a {
 
 .item1 img {
   /* height: 44.27083333333333vw; */
+  object-fit: cover;
+  object-position: top;
 }
 
 .item1 {
